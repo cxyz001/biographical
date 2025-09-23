@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java工程师简历</title>
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', 'SimHei', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            position: relative;
+        }
+        header {
+            position: relative;
+            height: 200px;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .profile {
+            display: flex;
+            margin-bottom: 30px;
+            position: relative;
+            z-index: 2;
+        }
+        .profile-info {
+            padding-left: 20px;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 5px;
+            color: #0066cc;
+        }
+        .title {
+            font-size: 1.2em;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+        }
+        .contact-item svg {
+            margin-right: 5px;
+        }
+        section {
+            margin-bottom: 30px;
+            position: relative;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #0066cc;
+            padding-bottom: 10px;
+            color: #0066cc;
+            position: relative;
+        }
+        h3 {
+            margin-bottom: 5px;
+            color: #0066cc;
+        }
+        .job-title, .edu-degree {
+            font-weight: bold;
+        }
+        .job-period, .edu-period {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .job, .education {
+            margin-bottom: 20px;
+        }
+        .skill-bars {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skill-item {
+            flex: 1 0 45%;
+            margin-bottom: 15px;
+        }
+        .skill-name {
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        .projects {
+            margin-top: 15px;
+        }
+        .project {
+            margin-bottom: 20px;
+        }
+        .project-title {
+            font-weight: bold;
+            color: #333;
+        }
+        .project-tech {
+            color: #666;
+            font-size: 0.9em;
+            margin-bottom: 5px;
+        }
+        ul {
+            margin-top: 5px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        
+        /* 打印和PDF优化样式 */
+        @media print {
+            body {
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                font-size: 11pt;
+            }
+            .container {
+                max-width: 100%;
+                padding: 15px;
+            }
+            section {
+                page-break-inside: avoid;
+                margin-bottom: 20px;
+            }
+            header, .profile {
+                page-break-after: avoid;
+            }
+            h2 {
+                page-break-after: avoid;
+            }
+            .project, .job {
+                page-break-inside: avoid;
+            }
+            /* 特定部分的分页控制 */
+            section:nth-of-type(3) {
+                page-break-before: always;
+                margin-top: 3em; /* 从第二页开始，顶部增加3em的间距 */
+            }
+            section:nth-of-type(5) {
+                page-break-before: always;
+                margin-top: 3em; /* 从第三页开始，顶部增加3em的间距 */
+            }
+            /* 优化小节间距 */
+            .job:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            .project:not(:last-child) {
+                margin-bottom: 15px;
+            }
+            
+            /* 移除页眉页脚 */
+            @page {
+                margin: 0;
+                size: A4;
+            }
+            
+            /* 为除第一页外的所有页面添加顶部间距 */
+            section:first-of-type + section + section ~ section {
+                padding-top: 3em; /* 为后续页面的section添加上边距 */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <!-- 顶部SVG背景 -->
+            <svg width="100%" height="100%" viewBox="0 0 1000 200" preserveAspectRatio="none" style="position: absolute; top: 0; left: 0;">
+                <path d="M0,0 L1000,0 L1000,150 Q500,250 0,150 Z" fill="#0066cc" />
+                <circle cx="800" cy="50" r="30" fill="#ffffff" fill-opacity="0.2" />
+                <circle cx="750" cy="80" r="20" fill="#ffffff" fill-opacity="0.2" />
+                <circle cx="900" cy="60" r="15" fill="#ffffff" fill-opacity="0.2" />
+                <circle cx="850" cy="30" r="10" fill="#ffffff" fill-opacity="0.2" />
+                <rect x="100" y="20" width="15" height="15" fill="#ffffff" fill-opacity="0.2" transform="rotate(45 100 20)" />
+                <rect x="150" y="40" width="10" height="10" fill="#ffffff" fill-opacity="0.2" transform="rotate(45 150 40)" />
+                <rect x="200" y="30" width="12" height="12" fill="#ffffff" fill-opacity="0.2" transform="rotate(45 200 30)" />
+            </svg>
+        </header>
+
+        <div class="profile">
+            <!-- 头像图片 -->
+            <img src="images/avatar.jpg" width="150" height="150" style="border-radius: 50%; border: 3px solid #0066cc;" alt="个人头像">
+            
+            <div class="profile-info">
+                <h1>周亮</h1>
+                <div class="title">Java 后端 | 全栈独立开发工程师 | 8年+工作经验</div>
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#0066cc">
+                            <path d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8l-8,5L4,8V6l8,5l8-5V8z" />
+                        </svg>
+                        154255868@163.com
+                    </div>
+                    <div class="contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#0066cc">
+                            <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5C20.55,15.5 21,15.95 21,16.5V20C21,20.55 20.55,21 20,21C10.61,21 3,13.39 3,4C3,3.45 3.45,3 4,3H7.5C8.05,3 8.5,3.45 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+                        </svg>
+                        18670477154
+                    </div>
+                    <div class="contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#0066cc">
+                            <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z" />
+                        </svg>
+                        广东省
+                    </div>
+                    <div class="contact-item">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="#0066cc">
+                            <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z" />
+                        </svg>
+                        <a href="https://gitee.com/jianling001/projects" target="_blank" style="color: #0066cc; text-decoration: none;">Gitee</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section>
+            <h2>教育背景</h2>
+            <div class="education">
+                <h3>中南大学</h3>
+                <div class="edu-degree">计算机科学与技术 | 本科</div>
+            </div>
+        </section>
+
+        <section>
+            <h2>个人简介</h2>
+            <p>8年+Java开发经验，同时熟悉Python、NodeJS、Go、C/C++等多种开发语言，具备跨语言应用开发能力。作为全栈独立开发者，精通前后端一体化开发与独立部署全流程，可快速高质量交付完整项目。擅长高性能、高并发系统设计与实现，专注于ERP系统、物联网应用与SAAS平台开发。了解LLM大语言模型、MCP协议和Agent技术，能将AI能力融入业务系统，提升软件智能化水平。热衷技术创新与最佳实践，有扎实的编程功底与快速解决复杂问题的能力。</p>
+        </section>
+
+        <section>
+            <h2>专业技能</h2>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 10px;"><strong>(1) Java 基础知识：</strong>精通多线程、IO流、集合、反射、注解等Java核心技术，深入理解JDK源码；掌握前端框架Vue、ElementUI、AntDesign，具备全栈开发能力，能高效实现前后端分离架构</li>
+                <li style="margin-bottom: 10px;"><strong>(2) 基础框架：</strong>熟练掌握Mybatis/Spring/SpringMVC/SpringBoot，了解其原理与源码，能进行二次开发与功能扩展，掌握AOP、IOC等核心技术</li>
+                <li style="margin-bottom: 10px;"><strong>(3) 微服务架构：</strong>精通SpringCloudAlibaba生态，包括Nacos服务注册与配置中心、Gateway网关、Sentinel熔断限流、Feign远程调用等组件，具备完整微服务架构设计与实施能力</li>
+                <li style="margin-bottom: 10px;"><strong>(4) 关系型数据库：</strong>深入理解MySQL存储引擎、事务隔离级别、索引原理、SQL优化技巧，熟悉分库分表、锁机制等高级特性，能针对高并发场景进行数据库架构设计与性能调优</li>
+                <li style="margin-bottom: 10px;"><strong>(5) 非关系型数据库：</strong>精通Redis数据结构、持久化策略、主从复制、哨兵机制，熟悉缓存穿透/击穿/雪崩解决方案；熟练使用Elasticsearch实现全文检索与复杂聚合分析</li>
+                <li style="margin-bottom: 10px;"><strong>(6) 中间件技术：</strong>熟练应用RabbitMQ实现系统解耦、消息削峰与异步处理，理解Kafka和RocketMQ的特性与适用场景；掌握物联网MQTT协议与Netty高性能网络编程</li>
+                <li style="margin-bottom: 10px;"><strong>(7) 设计与性能：</strong>熟练应用工厂、策略、观察者等设计模式解决实际问题；掌握常用数据结构与算法；了解JVM内存模型、垃圾回收机制，具备JVM调优经验</li>
+                <li style="margin-bottom: 10px;"><strong>(8) 运维与部署：</strong>熟悉Linux系统操作与Shell脚本编写；掌握Docker容器化与Kubernetes编排技术；熟练配置Nginx实现负载均衡、动静分离、反向代理；使用Jenkins实现CI/CD自动化部署</li>
+                <li style="margin-bottom: 10px;"><strong>(9) 大数据技术：</strong>了解Hadoop/Flink/HBase/Spark等大数据技术栈，具备数据ETL流程设计与实现能力，熟悉Kettle等数据集成工具，能构建完整数据分析处理流程</li>
+                <li style="margin-bottom: 10px;"><strong>(10) 其他技术：</strong>掌握Python数据采集与数据分析，具备C/C++嵌入式单片机开发经验，熟悉国内外主流AI平台接口调用与集成开发</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>工作经历</h2>
+            <div class="job">
+                <div class="job-header">
+                    <h3>广东跃闪科技有限公司</h3>
+                    <div class="job-title">软件开发工程师</div>
+                    <div class="job-period">2024年4月 - 2025年1月</div>
+                </div>
+                <ul>
+                    <li>负责整体技术架构，基础进销存模块搭建</li>
+                    <li>开发MES生产管理与MRP物资需求计划系统</li>
+                    <li>对接亚马逊、速卖通等国际电商平台API</li>
+                    <li>优化系统性能，解决高并发下的数据一致性问题</li>
+                </ul>
+            </div>
+            
+            <div class="job">
+                <div class="job-header">
+                    <h3>广州美胶物产有限公司</h3>
+                    <div class="job-title">Java开发工程师</div>
+                    <div class="job-period">2022年7月 - 2024年4月</div>
+                </div>
+                <ul>
+                    <li>负责整体技术架构，SAAS化构建独立数据隔设计</li>
+                    <li>开发ERP业务核心模块，确保系统稳定高效运行</li>
+                    <li>负责整个业务数据库设计及需求开发，负责项目上线部署</li>
+                    <li>采用SpringCloud微服务架构与ElementUI前端技术栈</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>广州金牛数据科技有限公司</h3>
+                    <div class="job-title">Java开发工程师</div>
+                    <div class="job-period">2020年3月 - 2022年6月</div>
+                </div>
+                <ul>
+                    <li>项目是对企业发票、报销单、档案做数据处理的财务软件</li>
+                    <li>负责报销单模块的数据库设计及需求开发</li>
+                    <li>采用JeecgBoot开发框架及Antdesign Vue技术</li>
+                    <li>优化SQL查询，提高系统响应速度，改善用户体验</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <div class="job-header">
+                    <h3>湖南汇百合科技有限公司</h3>
+                    <div class="job-title">Java开发工程师</div>
+                    <div class="job-period">2018年9月 - 2019年12月</div>
+                </div>
+                <ul>
+                    <li>负责医疗SAAS平台开发，设计代码规范与数据库</li>
+                    <li>对团队提供技术支持，及时处理系统问题</li>
+                    <li>对新技术的培训，逐步对项目进行改造</li>
+                    <li>负责系统性能优化，提高用户体验和响应速度</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2>项目经验</h2>
+            <div class="project">
+                <h3>AI智能体项目</h3>
+                <div class="project-tech">技术栈：大语言模型、Agent技术、LLM、RAG、MCP、AI工作流(n8n、Dify、Coze)</div>
+                <ul>
+                    <li>项目简介：基于大语言模型构建自主决策AI系统</li>
+                    <li>设计智能体行为决策模型，实现复杂场景下的智能交互</li>
+                    <li>构建自我优化学习模块，系统能够从历史数据中不断学习提升，适应更多复杂场景</li>
+                    <li>体验地址：<a href="https://www.yunbangong100.com:31111/login" target="_blank">https://www.yunbangong100.com:31111/login</a> (账号/密码：admin)</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <h3>ORO-MES-跨境ERP</h3>
+                <div class="project-tech">技术栈：SpringMVC、SpringBoot、MyBatis Plus、SpringCloud、Element UI、Redis、MySQL、Druid、XXL-JOB</div>
+                <ul>
+                    <li>项目简介：为工厂生产管理开发MES系统，为跨境贸易开发跨境ERP系统</li>
+                    <li>负责整体架构搭建，数据库模型设计，确保系统稳定性与扩展性</li>
+                    <li>实现采购、销售、库存、MRP物资需求计划核心功能，支持多语言多币种</li>
+                    <li>对接亚马逊和速卖通API，实现跨平台数据同步与订单自动化处理</li>
+                    <li>设计高效缓存策略，优化查询性能，提高系统响应速度</li>
+                    <li>实现完善的权限系统，支持多级菜单和数据权限控制</li>
+                    <li>演示地址：<a href="http://mes.app.ftkj365.com/" target="_blank">http://mes.app.ftkj365.com/</a> （账号：common，密码：111111）</li>
+                </ul>
+            </div>
+            
+            <div class="project">
+                <h3>塑划算SAAS化ERP平台</h3>
+                <div class="project-tech">技术栈：SpringBoot、SpringCloud、MyBatis、Vue、Element UI、Redis、MySQL</div>
+                <ul>
+                    <li>项目简介：针对外贸物流开发的数字化ERP平台</li>
+                    <li>主要负责整体SAAS架构搭建，ERP的进销存、物流等模块的需求开发</li>
+                    <li>设计实现多租户数据隔离方案，保证不同客户数据安全与隔离</li>
+                    <li>开发订单处理、库存管理、采购管理等核心业务模块</li>
+                    <li>实现系统监控与日志追踪功能，及时发现并解决系统问题</li>
+                    <li>演示地址：<a href="erp.stongpos.com" target="_blank">erp.stongpos.com</a> （账号：admin，密码：admin888）</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>新大陆物联网监控平台</h3>
+                <div class="project-tech">技术栈：SpringMVC、SpringBoot、SpringCloudGateway、Eureka、MyBatis Plus、Socket、Netty、Kafka、Flink、Redis、MySQL、Druid、Hadoop/HDFS</div>
+                <ul>
+                    <li>项目简介：实现污水设备监控、预警和统计分析，具备数据采集自动化、监控指标配置化、预警通知自动化、统计分析可视化功能</li>
+                    <li>负责设备数据采集模块开发，实现多协议支持和实时数据处理</li>
+                    <li>设计开发基于Kafka和Flink的数据流处理管道，支持高吞吐量数据处理</li>
+                    <li>实现设备状态实时监控和异常预警系统，支持多种通知方式</li>
+                    <li>开发可视化数据分析dashboard，支持多维度数据分析和趋势预测</li>
+                    <li>使用Hadoop/HDFS存储历史数据，实现大数据分析和长期数据检索能力</li>
+                    <li>演示地址：<a href="https://iot.fastbee.cn/login" target="_blank">https://iot.fastbee.cn/login</a> （账号：fastbee，密码：123456）</li>
+                </ul>
+            </div>
+
+            <!-- 增加额外的间距 -->
+            <div style="height: 180px;"></div>
+
+            <div class="project">
+                <h3>众爱互联网医院</h3>
+                <div class="project-tech">技术栈：SpringMVC、SpringBoot、SpringCloudGateway、MyBatis Plus、Nacos、Feign、XXL-JOB、RabbitMQ、Redis、MySQL、Druid、Element UI、Echarts</div>
+                <ul>
+                    <li>项目简介：为新媒体业务提供数据支撑，对接医院HIS系统的远程会诊平台</li>
+                    <li>负责整体架构搭建，实现初诊诊室系统、文件管理系统功能</li>
+                    <li>设计实现医患在线问诊、远程会诊、电子处方等核心功能</li>
+                    <li>开发医院设置管理、数据管理、用户管理、订单管理、统计管理等模块</li>
+                    <li>实现与多家医院HIS系统的数据对接，保证数据一致性和实时性</li>
+                    <li>使用分布式事务确保跨系统数据操作的原子性和一致性</li>
+                    <li>演示地址：<a href="http://his.hntyhb.com.cn:81/inner" target="_blank">http://his.hntyhb.com.cn:81/inner</a> （管理员账号：13546906869，密码：888ppp）</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>管票牛财务软件</h3>
+                <div class="project-tech">技术栈：SpringMVC、SpringBoot、MyBatis Plus、Socket、Netty、Redis、MySQL、Element UI、Echarts</div>
+                <ul>
+                    <li>项目简介：针对企业发票、报销单、档案管理的财务软件，包含工作流功能</li>
+                    <li>设计开发基于新大陆物联网监控平台架构的财务管理系统</li>
+                    <li>实现发票管理、报销单处理、档案管理等核心功能</li>
+                    <li>开发可配置的工作流引擎，支持多种业务场景的审批流程</li>
+                    <li>使用OCR技术实现发票信息自动识别和提取，大幅提高工作效率</li>
+                    <li>设计实现财务报表和数据分析功能，为企业财务决策提供支持</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>东西潮玩APP</h3>
+                <div class="project-tech">技术栈：SpringMVC、SpringBoot、SpringCloudGateway、MyBatis Plus、Nacos、Feign、XXL-JOB、RabbitMQ、Redis、MySQL、Druid、Element UI</div>
+                <ul>
+                    <li>项目简介：开发盲盒和实物交易的APP</li>
+                    <li>负责业务模块开发，包括商品管理、订单处理、支付系统</li>
+                    <li>设计实现抽奖概率和商品信息系统，确保公平性和透明度</li>
+                    <li>开发用户积分和会员体系，提高用户粘性和活跃度</li>
+                    <li>实现商品库存和物流管理功能，保证发货准确性和时效性</li>
+                    <li>使用分布式锁解决高并发下的库存超卖问题</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>摄像头监控系统</h3>
+                <div class="project-tech">技术栈：Linux、C/C++、HTTP协议、YUVV/JPEG、WebSocket</div>
+                <ul>
+                    <li>项目简介：摄像头数据联网，网络视频传输</li>
+                    <li>使用V4L2编程在Linux系统中获取摄像头数据</li>
+                    <li>深入研究HTTP协议工作原理，通过编程实现HTTP协议数据传输</li>
+                    <li>掌握libjpg库使用，实现YUVV数据格式压缩成jpeg数据格式进行传输</li>
+                    <li>开发远程视频监控实现具体的远程视频监控功能，并通过浏览器呈现视频流</li>
+                    <li>优化视频编码和传输策略，降低延迟，提高画面质量</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</body>
+</html> 
