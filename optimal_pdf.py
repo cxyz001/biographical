@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import os
 import subprocess
 
@@ -34,23 +35,26 @@ def generate_optimal_pdf(html_path, pdf_path):
             '--disable-web-security',     # 禁用Web安全策略
             '--disable-extensions',       # 禁用扩展
             '--disable-breakpad',         # 禁用崩溃报告
-            f'--print-to-pdf={os.path.abspath(pdf_path)}',
-            f'file:///{os.path.abspath(html_path)}'
+            '--print-to-pdf={}'.format(os.path.abspath(pdf_path)),
+            'file:///{}'.format(os.path.abspath(html_path))
         ]
         
         # 执行命令
-        subprocess.run(cmd, check=True)
-        print(f"已生成优化的PDF文档: {pdf_path}")
+        subprocess.call(cmd)
+        print("已生成优化的PDF文档: {}".format(pdf_path))
         return True
     
     except Exception as e:
-        print(f"生成PDF失败: {e}")
+        print("生成PDF失败: {}".format(e))
         return False
 
 if __name__ == "__main__":
-    html_path = 'resume.html'
-    pdf_path = 'resume_final.pdf'
+    import datetime
     
-    print("正在生成最终优化版PDF...")
+    html_path = 'resume.html'
+    current_date = datetime.datetime.now().strftime('%Y-%m-%d')
+    pdf_path = '{}-简历-周亮.pdf'.format(current_date)
+    
+    print("正在生成最终优化版PDF: {}".format(pdf_path))
     generate_optimal_pdf(html_path, pdf_path)
     print("完成！请查看生成的PDF文件。") 

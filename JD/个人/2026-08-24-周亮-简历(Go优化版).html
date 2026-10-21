@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>周亮 - 简历</title>
+<style>
+  @page { size: A4; margin: 11mm 14mm; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB", sans-serif;
+    color: #1f2430;
+    font-size: 10pt;
+    line-height: 1.5;
+    background: #fff;
+  }
+  .wrap { max-width: 180mm; margin: 0 auto; }
+
+  header.top { border-bottom: 2.2px solid #1b3a63; padding-bottom: 6px; margin-bottom: 2px; }
+  .name { font-size: 22pt; font-weight: 700; letter-spacing: 3px; color: #14263f; line-height: 1.2; }
+  .role { font-size: 11.5pt; color: #1b3a63; margin-top: 3px; font-weight: 600; }
+  .contact { font-size: 9.5pt; color: #4a5464; margin-top: 5px; }
+  .contact span { margin-right: 6px; }
+  .tagline {
+    margin-top: 6px; font-size: 9.5pt; color: #0b2545; background: #eef2f8;
+    border-left: 3px solid #1b3a63; padding: 3px 9px; display: inline-block; font-weight: 600;
+  }
+
+  h2 {
+    font-size: 11.5pt; color: #14263f; margin: 11px 0 5px; padding-bottom: 3px;
+    border-bottom: 1px solid #c9d3e2; letter-spacing: 2px;
+  }
+  h2::before { content: ""; display: inline-block; width: 4px; height: 12px; background: #1b3a63; margin-right: 7px; vertical-align: -1px; }
+
+  .summary { text-align: justify; margin: 2px 0 0; }
+
+  .skill { margin-bottom: 3.5px; display: flex; }
+  .skill .k { flex: 0 0 92px; font-weight: 700; color: #14263f; }
+  .skill .v { flex: 1; }
+
+  .entry { margin-bottom: 7px; }
+  .row1 { display: flex; align-items: baseline; justify-content: space-between; }
+  .row1 .who { font-weight: 700; font-size: 11pt; color: #14263f; }
+  .row1 .when { font-size: 9.5pt; color: #5a6473; white-space: nowrap; }
+  .pos { font-size: 9.5pt; color: #1b3a63; font-weight: 600; margin: 1px 0 3px; }
+  ul.b { margin: 3px 0 0; padding-left: 15px; }
+  ul.b li { margin-bottom: 1px; text-align: justify; }
+  ul.b li::marker { color: #1b3a63; }
+
+  .proj { margin-bottom: 8px; page-break-inside: auto; }
+  .ptitle { font-weight: 700; font-size: 11pt; color: #14263f; }
+  .pdesc { margin: 2px 0 3px; text-align: justify; }
+  .stack { font-size: 9.5pt; color: #33507a; margin-bottom: 3px; }
+  .stack b { color: #14263f; }
+  .url { font-size: 9pt; color: #48607f; margin-top: 2px; }
+  .url a { color: #294c7a; text-decoration: none; }
+
+  .edu { margin-bottom: 2px; }
+  footer.note { margin-top: 12px; border-top: 1px solid #c9d3e2; padding-top: 6px; font-size: 9.5pt; color: #4a5464; }
+  .newmark { color: #b3541e; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="top">
+    <div class="name">周 亮</div>
+    <div class="role">Go / Java 全栈工程师 | AI 软件开发工程师 | 8年+ 研发经验</div>
+    <div class="contact">
+      <span>154255868@163.com</span> | <span>18670477154</span> | <span>广东省</span> |
+      <span>Gitee：https://gitee.com/jianling001</span>
+    </div>
+    <div class="tagline">求职方向：Go 后端 / Java 后端 / 全栈 / AI 应用开发</div>
+  </header>
+
+  <h2>个人简介</h2>
+  <p class="summary">
+    8 年+ 后端与全栈开发经验，以 Java 技术体系为根基，近年主力使用 <b>Go（Gin）</b> 构建高并发云原生服务，同时具备
+    <b>Python</b>、Node.js 等多语言栈能力，拥有从需求分析、架构设计、编码交付到线上运维的完整研发闭环经验。长期深耕
+    ERP / SaaS / MES / 实时视频 / AI 应用五大领域，擅长高并发服务设计、Go 并发模型（Goroutine / Channel）与微服务治理、
+    数据处理及系统性能调优。持续跟踪 大模型、RAG、MCP、Agent、计算机视觉与视频工程 前沿技术，能够将 AI 能力与实际业务系统
+    深度结合，推动功能从原型验证走向可用、可维护的生产级应用。具备跨团队协作和技术方案输出能力，可在复杂业务场景中独立承担
+    架构设计与核心模块交付。
+  </p>
+
+  <h2>核心技能</h2>
+  <div class="skill">
+    <div class="k">Go / 后端</div>
+    <div class="v">Go（Golang）、Gin、GORM、gRPC / Protobuf、Go Module；Goroutine / Channel 并发模型、sync 并发控制、
+      context 超时治理、pprof 性能剖析与 GC 调优；go-zero / Go-Micro 微服务与服务治理实践</div>
+  </div>
+  <div class="skill">
+    <div class="k">Python 开发</div>
+    <div class="v">Python、FastAPI / Flask、异步编程（asyncio）、多线程 / 多进程；NumPy、Pandas 数据处理，
+      AI 算法服务、脚本工具与自动化任务开发</div>
+  </div>
+  <div class="skill">
+    <div class="k">Java / 后端</div>
+    <div class="v">Java、Spring、Spring Boot、Spring Cloud Alibaba、MyBatis-Plus、AOP / IoC、JVM 调优、并发编程、Netty</div>
+  </div>
+  <div class="skill">
+    <div class="k">数据与中间件</div>
+    <div class="v">MySQL（SQL 优化）、Redis（缓存设计）、Elasticsearch、Kafka / RabbitMQ / RocketMQ / MQTT
+      （消息驱动与数据一致性）</div>
+  </div>
+  <div class="skill">
+    <div class="k">前端与工程化</div>
+    <div class="v">Vue、Element UI、Ant Design、JavaScript；Linux、Docker、Kubernetes、Nginx、Jenkins
+      （CI/CD 与可观测性）</div>
+  </div>
+  <div class="skill">
+    <div class="k">AI 与视频工程</div>
+    <div class="v">PyTorch、TensorFlow、YOLO、OpenCV、FFmpeg、WebSocket；LLM / RAG / MCP / Agent / n8n / Dify / Coze</div>
+  </div>
+
+  <h2>工作经历</h2>
+
+  <div class="entry">
+    <div class="row1"><div class="who">深圳安软科技</div><div class="when">2025.02 – 至今</div></div>
+    <div class="pos">AI 软件开发工程师</div>
+    <ul class="b">
+      <li>负责 AI 羽毛球运动项目「AI羽宙」的后端与 AI 应用开发（Go / Gin 技术栈），参与直播视频业务、赛事内容服务和运动数据能力建设</li>
+      <li>围绕视频采集、转码、切片、直播分发与回放管理，设计稳定的服务接口和异步处理流程，提升视频链路可靠性与扩展性</li>
+      <li>结合计算机视觉与大模型能力，探索羽毛球赛事精彩片段识别、内容摘要、运动过程分析等功能，为直播运营和用户复盘提供智能化支持</li>
+      <li>参与系统架构、数据库设计、接口开发、问题排查和部署运维全流程，推动 AI 功能从原型验证逐步落地到生产</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row1"><div class="who">广东跃闪科技有限公司</div><div class="when">2024.04 – 2025.01</div></div>
+    <div class="pos">软件开发工程师</div>
+    <ul class="b">
+      <li>负责企业级技术架构与核心业务模块开发，参与 MES、MRP、生产计划等系统建设</li>
+      <li>对接京东、亚马逊、敦煌网等第三方平台 API，完成订单、商品及业务数据同步，优化高并发场景下的处理效率</li>
+      <li>参与系统性能优化与线上问题治理，提升接口响应速度、任务稳定性和业务可追踪性</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row1"><div class="who">广州美胶物产有限公司</div><div class="when">2022.07 – 2024.04</div></div>
+    <div class="pos">Java 开发工程师</div>
+    <ul class="b">
+      <li>负责企业级 SaaS 平台和 ERP 核心业务模块研发，参与多租户数据隔离、权限体系与基础能力建设</li>
+      <li>使用 Spring Cloud、MyBatis、Redis、MySQL 完成服务拆分、接口开发和数据库设计，支撑业务持续迭代</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row1"><div class="who">广州金牛数据科技有限公司</div><div class="when">2020.03 – 2022.06</div></div>
+    <div class="pos">Java 开发工程师</div>
+    <ul class="b">
+      <li>参与企业电子发票及相关业务系统建设，负责业务模块、数据模型与接口开发</li>
+      <li>基于 JeecgBoot、MyBatis-Plus、Ant Design Vue 完成前后端协同开发，优化查询与报表性能</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="row1"><div class="who">湖南汇百合科技有限公司</div><div class="when">2018.09 – 2019.12</div></div>
+    <div class="pos">Java 开发工程师</div>
+    <ul class="b">
+      <li>参与医疗 SaaS 平台研发与维护，负责核心功能开发、系统支持和线上问题处理</li>
+      <li>沉淀编码规范与开发流程，协助团队完成项目迭代和技术培训</li>
+    </ul>
+  </div>
+
+  <h2>项目经历</h2>
+
+  <div class="proj">
+    <div class="row1"><div class="ptitle">AI羽宙 — 羽毛球运动智能视频平台</div></div>
+    <div class="stack"><b>技术栈：</b>Go / Gin / GORM / gRPC / Redis / Kafka / WebSocket / FFmpeg / OpenCV / Python / YOLO / Docker</div>
+    <div class="pdesc">面向羽毛球运动场景的直播与视频内容平台，围绕赛事直播、视频回放、运动内容生产和智能分析构建业务能力。</div>
+    <ul class="b">
+      <li>采用 <b>Gin + GORM</b> 搭建后端服务，按直播间、赛事、用户、视频素材、回放与内容管理拆分领域模型与路由分组，
+        通过中间件统一处理鉴权、限流、参数校验与链路日志</li>
+      <li>使用 <b>Goroutine 池 + Channel</b> 实现高并发任务编排，参与视频采集、转码、切片、上传、存储及分发流程建设，
+        基于 FFmpeg 完成视频处理，配合 Kafka 异步任务与消息队列提升链路吞吐和削峰能力</li>
+      <li>基于 <b>WebSocket</b> 支持直播状态、处理进度和互动信息实时推送，优化长连接管理、心跳检测与异常重连机制</li>
+      <li>结合 OpenCV、YOLO 目标检测及大模型能力，探索精彩球回放、运动片段筛选、视频标签、赛事摘要和训练复盘等 AI 功能</li>
+      <li>通过 <b>pprof</b> 性能剖析与日志监控进行故障排查、内存与 GC 优化，采用 Docker 容器化部署，
+        持续提升直播视频系统稳定性与可维护性</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="row1"><div class="ptitle">AI 智能办公平台</div></div>
+    <div class="stack"><b>技术栈：</b>LLM / Agent / RAG / MCP / Python / n8n / Dify / Coze</div>
+    <div class="pdesc">基于大模型与知识库构建的企业智能办公应用，支持自然语言交互、知识检索与业务流程自动化。</div>
+    <div class="url">项目地址：https://www.yunbangong100.com:31111/login （账号/密码：admin）</div>
+    <ul class="b">
+      <li>参与模型接入、Prompt 设计、知识库构建和 Agent 工作流编排，支持多轮对话及复杂任务拆解</li>
+      <li>围绕企业知识问答、文档处理和业务协同场景，设计检索增强、工具调用与结果校验流程，提升输出稳定性</li>
+      <li>结合历史数据和用户反馈持续优化知识召回、上下文管理与业务规则，推动 AI 能力融入日常业务系统</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="row1"><div class="ptitle">ORO-MES 跨境 ERP 系统</div></div>
+    <div class="stack"><b>技术栈：</b>Spring MVC / Spring Boot / MyBatis-Plus / Spring Cloud / Element UI / Redis / MySQL / XXL-JOB</div>
+    <div class="pdesc">为制造与跨境贸易场景建设的 MES 与 ERP 系统。</div>
+    <div class="url">项目地址：http://mes.app.ftkj365.com/ （账号：common，密码：111111）</div>
+    <ul class="b">
+      <li>参与系统架构、数据库模型和采购、销售、库存、MRP、生产计划等模块设计开发</li>
+      <li>对接京东、亚马逊、敦煌网等平台 API，实现订单同步、数据转换及业务自动化处理</li>
+      <li>通过缓存、异步任务和 SQL 优化改善高并发场景下的接口响应与任务执行效率</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="row1"><div class="ptitle">智慧工厂实时视频与 AI 分析平台</div></div>
+    <div class="stack"><b>技术栈：</b>Spring Boot / Gateway / Netty / Kafka / Flink / Redis / Python / YOLO / OpenCV / FFmpeg / WebSocket</div>
+    <div class="pdesc">面向工厂设备监控的视频采集、实时传输、AI 识别和数据分析平台。</div>
+    <div class="url">项目地址：https://iot.fastbee.cn/login （账号：fastbee，密码：123456）</div>
+    <ul class="b">
+      <li>参与设备数据采集、视频流接入、实时传输和监控服务建设，支持多协议设备接入与统一管理</li>
+      <li>使用 YOLO 完成设备状态、异常行为等目标识别，结合 OpenCV、FFmpeg 实现视频采集、压缩和实时处理</li>
+      <li>通过 Kafka、Flink 处理实时数据，配合数据看板展示设备运行状态、告警及统计分析结果</li>
+      <li>优化 SQL 查询与关键业务链路，改善系统稳定性和用户使用体验</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="row1"><div class="ptitle">电商行业 SaaS ERP 平台</div></div>
+    <div class="stack"><b>技术栈：</b>Spring Boot / Spring Cloud / MyBatis / Vue / Element UI / Redis / MySQL</div>
+    <div class="pdesc">面向连锁零售与电商场景的多租户 ERP 平台。</div>
+    <div class="url">项目地址：http://erp.stongpos.com （账号：admin，密码：admin888）</div>
+    <ul class="b">
+      <li>参与 SaaS 架构搭建，负责订单、商品、库存、营销等模块的需求分析与研发</li>
+      <li>实现多租户数据隔离、统一认证与权限控制，保障不同客户数据安全及业务独立性</li>
+      <li>建设系统操作日志与链路追踪能力，支持问题定位、审计及运营分析</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="row1"><div class="ptitle">互联网医疗远程问诊平台</div></div>
+    <div class="stack"><b>技术栈：</b>Spring Boot / Spring Cloud Gateway / Nacos / Feign / RabbitMQ / Redis / MySQL / Vue / ECharts</div>
+    <div class="pdesc">为医疗服务机构提供远程问诊、电子病历及医院 HIS 对接能力的平台。</div>
+    <div class="url">项目地址：http://his.hntyhb.com.cn:81/inner （管理员账号：13546906869，密码：888ppp）</div>
+    <ul class="b">
+      <li>参与服务拆分，开发问诊、预约、病历、消息通知和统计分析等模块</li>
+      <li>对接医院 HIS 系统，实现患者、订单及医疗业务数据交换，保障数据一致性与实时性</li>
+      <li>使用消息队列和分布式事务思路提升异步任务可靠性，优化高并发场景系统稳定性</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="row1"><div class="ptitle">电子发票综合服务平台</div></div>
+    <div class="stack"><b>技术栈：</b>Spring Boot / MyBatis-Plus / Netty / Redis / MySQL / Vue / OCR</div>
+    <div class="pdesc">面向企业发票开具、识别、管理与报表分析的业务平台。</div>
+    <ul class="b">
+      <li>负责发票业务、OCR 识别、信息抽取和报表统计等功能开发</li>
+      <li>优化大批量数据处理及查询逻辑，提升系统响应速度和业务处理效率</li>
+    </ul>
+  </div>
+
+  <div class="proj">
+    <div class="row1"><div class="ptitle">盲盒电商 APP</div></div>
+    <div class="stack"><b>技术栈：</b>Spring Boot / Spring Cloud Gateway / Nacos / Feign / RabbitMQ / Redis / MySQL / Vue</div>
+    <div class="pdesc">面向盲盒及实物交易场景的移动端业务系统。</div>
+    <ul class="b">
+      <li>参与商品、订单、抽奖、会员和支付等核心模块开发，完善用户与商品运营能力</li>
+      <li>使用缓存和异步消息削峰，保障高并发抽奖及订单场景下的数据一致性</li>
+    </ul>
+  </div>
+
+  <h2>教育背景</h2>
+  <div class="edu"><b>中南大学</b> — 计算机科学与技术（本科）</div>
+
+  <footer class="note">
+    求职方向：Go / Java 后端 / 全栈开发 / AI 应用开发 / 视频与计算机视觉工程<br>
+    说明：可根据岗位需要提供项目演示、代码样例及系统设计说明。以上项目地址均可在线访问体验。
+  </footer>
+
+</div>
+</body>
+</html>

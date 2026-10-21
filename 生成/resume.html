@@ -56,10 +56,10 @@
             margin-right: 5px;
         }
         section {
-            margin-bottom: 30px;
+            margin-bottom: 25px;
             position: relative;
             background: white;
-            padding: 20px;
+            padding: 18px;
             border-radius: 5px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
@@ -132,7 +132,7 @@
             }
             section {
                 page-break-inside: avoid;
-                margin-bottom: 20px;
+                margin-bottom: 15px;
             }
             header, .profile {
                 page-break-after: avoid;
@@ -148,16 +148,16 @@
                 page-break-before: always;
                 margin-top: 3em; /* 从第二页开始，顶部增加3em的间距 */
             }
-            section:nth-of-type(5) {
+            section:nth-of-type(6) {
                 page-break-before: always;
                 margin-top: 3em; /* 从第三页开始，顶部增加3em的间距 */
             }
             /* 优化小节间距 */
             .job:not(:last-child) {
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
             .project:not(:last-child) {
-                margin-bottom: 15px;
+                margin-bottom: 10px;
             }
             
             /* 移除页眉页脚 */
@@ -235,7 +235,7 @@
 
         <section>
             <h2>个人简介</h2>
-            <p>8年+Java开发经验，同时熟悉Python、NodeJS、Go、C/C++等多种开发语言，具备跨语言应用开发能力。作为全栈独立开发者，精通前后端一体化开发与独立部署全流程，可快速高质量交付完整项目。擅长高性能、高并发系统设计与实现，专注于ERP系统、物联网应用与SAAS平台开发。了解LLM大语言模型、MCP协议和Agent技术，能将AI能力融入业务系统，提升软件智能化水平。热衷技术创新与最佳实践，有扎实的编程功底与快速解决复杂问题的能力。</p>
+            <p>8年+Java开发经验，同时熟悉Python、NodeJS、Go等多种开发语言，具备跨语言应用开发能力。作为全栈独立开发者，精通前后端一体化开发与独立部署全流程，可快速高质量交付完整项目。擅长高性能、高并发系统设计与实现，专注于ERP系统、物联网应用与SAAS平台开发。了解LLM大语言模型、MCP协议和Agent技术，能将AI能力融入业务系统，提升软件智能化水平。掌握YOLO目标检测算法和计算机视觉技术，具备AI模型训练与部署经验。热衷技术创新与最佳实践，有扎实的编程功底与快速解决复杂问题的能力。</p>
         </section>
 
         <section>
@@ -250,7 +250,8 @@
                 <li style="margin-bottom: 10px;"><strong>(7) 设计与性能：</strong>熟练应用工厂、策略、观察者等设计模式解决实际问题；掌握常用数据结构与算法；了解JVM内存模型、垃圾回收机制，具备JVM调优经验</li>
                 <li style="margin-bottom: 10px;"><strong>(8) 运维与部署：</strong>熟悉Linux系统操作与Shell脚本编写；掌握Docker容器化与Kubernetes编排技术；熟练配置Nginx实现负载均衡、动静分离、反向代理；使用Jenkins实现CI/CD自动化部署</li>
                 <li style="margin-bottom: 10px;"><strong>(9) 大数据技术：</strong>了解Hadoop/Flink/HBase/Spark等大数据技术栈，具备数据ETL流程设计与实现能力，熟悉Kettle等数据集成工具，能构建完整数据分析处理流程</li>
-                <li style="margin-bottom: 10px;"><strong>(10) 其他技术：</strong>掌握Python数据采集与数据分析，具备C/C++嵌入式单片机开发经验，熟悉国内外主流AI平台接口调用与集成开发</li>
+                <li style="margin-bottom: 10px;"><strong>(10) AI与计算机视觉：</strong>掌握YOLO系列目标检测算法（YOLOv5/v8/v11），熟练使用PyTorch/TensorFlow进行模型训练与优化；精通OpenCV图像处理，具备目标检测、图像分割、特征提取等计算机视觉技术经验；掌握Python数据采集与数据分析，熟悉国内外主流AI平台接口调用与集成开发</li>
+                <li style="margin-bottom: 10px;"><strong>(11) GIS地理信息系统：</strong>熟练掌握PostGIS空间数据库和MongoDB地理空间功能；精通GeoServer地图服务、GeoTools工具包和JTS几何运算；掌握OGC标准(WMS/WFS/WMTS)接口开发；熟悉GDAL/OGR地理数据处理；精通Cesium.js三维地球可视化和Three.js三维建模；具备瓦片服务开发经验，熟悉影像瓦片、矢量瓦片(MVT)切片技术；掌握空间索引优化和复杂空间查询，支持3D Tiles、倾斜摄影等三维数据格式</li>
             </ul>
         </section>
 
@@ -354,21 +355,21 @@
             </div>
 
             <div class="project">
-                <h3>新大陆物联网监控平台</h3>
-                <div class="project-tech">技术栈：SpringMVC、SpringBoot、SpringCloudGateway、Eureka、MyBatis Plus、Socket、Netty、Kafka、Flink、Redis、MySQL、Druid、Hadoop/HDFS</div>
+                <h3>智能视频监控物联网平台</h3>
+                <div class="project-tech">技术栈：SpringMVC、SpringBoot、SpringCloudGateway、Eureka、MyBatis Plus、Socket、Netty、Kafka、Flink、Redis、MySQL、Druid、Hadoop/HDFS、Python、YOLO、OpenCV、FFmpeg、WebSocket</div>
                 <ul>
-                    <li>项目简介：实现污水设备监控、预警和统计分析，具备数据采集自动化、监控指标配置化、预警通知自动化、统计分析可视化功能</li>
-                    <li>负责设备数据采集模块开发，实现多协议支持和实时数据处理</li>
-                    <li>设计开发基于Kafka和Flink的数据流处理管道，支持高吞吐量数据处理</li>
-                    <li>实现设备状态实时监控和异常预警系统，支持多种通知方式</li>
-                    <li>开发可视化数据分析dashboard，支持多维度数据分析和趋势预测</li>
-                    <li>使用Hadoop/HDFS存储历史数据，实现大数据分析和长期数据检索能力</li>
+                    <li>项目简介：基于物联网技术的智能视频监控平台，集成设备监控、视频采集、AI识别和数据分析功能，实现污水设备监控、智能视频分析、预警和统计分析的综合解决方案</li>
+                    <li>负责整体架构设计与核心模块开发，实现物联网设备数据采集、视频流处理和多协议支持</li>
+                    <li>基于YOLO算法训练目标检测模型，实现设备状态智能识别、异常行为检测和人员安全监控</li>
+                    <li>设计开发基于Kafka和Flink的实时数据流处理管道，支持视频流和传感器数据的高吞吐量并发处理</li>
+                    <li>使用OpenCV和FFmpeg实现视频采集、编码压缩和实时传输，通过WebSocket提供低延迟视频流服务</li>
+                    <li>开发AI智能分析模块，结合YOLO目标检测实现设备异常、人员入侵、环境变化等事件的自动识别和预警</li>
+                    <li>实现可视化数据分析dashboard，支持多维度数据分析、趋势预测和AI识别结果展示</li>
+                    <li>使用Hadoop/HDFS存储海量视频和传感器历史数据，实现大数据分析和长期数据检索能力</li>
                     <li>演示地址：<a href="https://iot.fastbee.cn/login" target="_blank">https://iot.fastbee.cn/login</a> （账号：fastbee，密码：123456）</li>
                 </ul>
             </div>
 
-            <!-- 增加额外的间距 -->
-            <div style="height: 180px;"></div>
 
             <div class="project">
                 <h3>众爱互联网医院</h3>
@@ -409,17 +410,20 @@
                     <li>使用分布式锁解决高并发下的库存超卖问题</li>
                 </ul>
             </div>
-
             <div class="project">
-                <h3>摄像头监控系统</h3>
-                <div class="project-tech">技术栈：Linux、C/C++、HTTP协议、YUVV/JPEG、WebSocket</div>
+                <h3>GIS地理信息管理系统</h3>
+                <div class="project-tech">技术栈：SpringBoot、PostgreSQL、PostGIS、MongoDB、GeoServer、GeoTools、JTS、GDAL/OGR、Cesium.js、Three.js、瓦片服务、TileServer、Kafka、Redis、Docker、Kubernetes</div>
                 <ul>
-                    <li>项目简介：摄像头数据联网，网络视频传输</li>
-                    <li>使用V4L2编程在Linux系统中获取摄像头数据</li>
-                    <li>深入研究HTTP协议工作原理，通过编程实现HTTP协议数据传输</li>
-                    <li>掌握libjpg库使用，实现YUVV数据格式压缩成jpeg数据格式进行传输</li>
-                    <li>开发远程视频监控实现具体的远程视频监控功能，并通过浏览器呈现视频流</li>
-                    <li>优化视频编码和传输策略，降低延迟，提高画面质量</li>
+                    <li>项目简介：企业级三维地理信息系统，提供二维/三维地图展示、空间数据管理、瓦片服务和实时位置服务的综合解决方案</li>
+                    <li>负责微服务架构设计，实现地图服务(WMS/WMTS)、要素服务(WFS)等OGC标准接口开发</li>
+                    <li>基于Cesium.js构建三维地球可视化平台，支持倾斜摄影、点云数据、BIM模型等三维数据展示</li>
+                    <li>开发高性能瓦片服务系统，实现影像瓦片、矢量瓦片(MVT)的切片、存储和分发，支持多级缓存优化</li>
+                    <li>设计高效空间索引策略(R-tree、GiST索引)，优化复杂空间查询性能，支持大规模地理数据处理</li>
+                    <li>实现空间查询、缓冲区分析、叠加分析、三维空间分析等GIS核心算法，集成百度地图、高德地图API</li>
+                    <li>开发多源地理数据清洗、转换和融合工具，支持栅格数据瓦片化处理，构建ETL流水线处理海量地理数据</li>
+                    <li>基于Kafka实现IoT设备位置数据实时接入，支持轨迹数据分析和时空大数据处理</li>
+                    <li>采用Docker容器化部署，Kubernetes集群管理，实现瓦片服务高可用和自动扩缩容</li>
+                    <li>使用PostGIS空间数据库和MongoDB地理空间索引，支持GeoJSON、KML、3D Tiles等标准格式</li>
                 </ul>
             </div>
         </section>

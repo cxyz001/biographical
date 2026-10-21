@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黄芷菁 - 个人简历</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Microsoft YaHei', 'SimHei', 'PingFang SC', sans-serif;
+            background: linear-gradient(135deg, #FFF9E6 0%, #FFFEF7 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: #ffffff;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        /* 顶部装饰SVG - 黄色清新格调 */
+        .header-decoration {
+            position: relative;
+            height: 280px;
+            overflow: hidden;
+            background: linear-gradient(135deg, #FFD93D 0%, #FFC947 50%, #FFB84D 100%);
+        }
+        
+        .wave-bg {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        /* 浮动装饰元素 */
+        .floating-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+        
+        /* 个人信息区域 */
+        .profile-section {
+            position: relative;
+            z-index: 10;
+            padding: 40px 50px 30px;
+            margin-top: -80px;
+            background: white;
+            margin-left: 40px;
+            margin-right: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 40px rgba(255, 193, 7, 0.2);
+        }
+        
+        .profile-header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 25px;
+        }
+        
+        .avatar-container {
+            position: relative;
+        }
+        
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #FFD93D;
+            object-fit: cover;
+            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+        }
+        
+        .avatar-decoration {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+        }
+        
+        .profile-info h1 {
+            font-size: 2.5em;
+            color: #FF9800;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        
+        .job-title {
+            font-size: 1.3em;
+            color: #666;
+            margin-bottom: 15px;
+            font-weight: 400;
+        }
+        
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.95em;
+            color: #555;
+        }
+        
+        .contact-item svg {
+            fill: #FFB74D;
+        }
+        
+        /* 章节样式 */
+        .section {
+            padding: 30px 50px;
+            margin: 0 40px 25px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 3px 15px rgba(255, 193, 7, 0.08);
+            position: relative;
+        }
+        
+        .section::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 5px;
+            height: 100%;
+            background: linear-gradient(180deg, #FFD93D 0%, #FFB74D 100%);
+            border-radius: 15px 0 0 15px;
+        }
+        
+        .section-title {
+            font-size: 1.8em;
+            color: #FF9800;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+        }
+        
+        .section-title::before {
+            content: '';
+            width: 8px;
+            height: 8px;
+            background: #FFD93D;
+            border-radius: 50%;
+            box-shadow: 0 0 0 3px rgba(255, 217, 61, 0.3);
+        }
+        
+        .section-icon {
+            width: 28px;
+            height: 28px;
+        }
+        
+        /* 列表项 */
+        .item {
+            margin-bottom: 25px;
+            padding-left: 20px;
+            border-left: 2px solid #FFE082;
+            position: relative;
+        }
+        
+        .item::before {
+            content: '';
+            position: absolute;
+            left: -6px;
+            top: 8px;
+            width: 10px;
+            height: 10px;
+            background: #FFD93D;
+            border-radius: 50%;
+        }
+        
+        .item-title {
+            font-size: 1.2em;
+            color: #FF9800;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .item-subtitle {
+            color: #666;
+            margin-bottom: 8px;
+            font-size: 0.95em;
+        }
+        
+        .item-period {
+            color: #999;
+            font-size: 0.9em;
+            margin-bottom: 10px;
+        }
+        
+        .item-content {
+            color: #555;
+            line-height: 1.8;
+        }
+        
+        .item-content ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .item-content li {
+            padding-left: 20px;
+            margin-bottom: 8px;
+            position: relative;
+        }
+        
+        .item-content li::before {
+            content: '▸';
+            position: absolute;
+            left: 0;
+            color: #FFB74D;
+            font-weight: bold;
+        }
+        
+        /* 技能标签 */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .skill-tag {
+            background: linear-gradient(135deg, #FFF9E6 0%, #FFECB3 100%);
+            color: #FF8F00;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            border: 1px solid #FFD93D;
+            transition: all 0.3s ease;
+        }
+        
+        .skill-tag:hover {
+            background: linear-gradient(135deg, #FFD93D 0%, #FFC947 100%);
+            color: white;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(255, 193, 7, 0.3);
+        }
+        
+        /* 优势卡片 */
+        .advantage-item {
+            background: linear-gradient(135deg, #FFFEF7 0%, #FFF9E6 100%);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 12px;
+            border-left: 4px solid #FFD93D;
+        }
+        
+        .advantage-item strong {
+            color: #FF9800;
+        }
+        
+        /* 打印优化 */
+        @media print {
+            body {
+                background: white;
+            }
+            
+            .container {
+                max-width: 100%;
+                box-shadow: none;
+            }
+            
+            .section {
+                page-break-inside: avoid;
+                box-shadow: none;
+                margin: 0 20px 15px;
+            }
+            
+            .profile-section {
+                page-break-after: avoid;
+                margin: 0 20px 20px;
+            }
+            
+            @page {
+                margin: 0.5cm;
+                size: A4;
+            }
+        }
+        
+        /* 底部装饰 */
+        .footer-decoration {
+            height: 100px;
+            margin-top: 30px;
+            position: relative;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部装饰区域 -->
+        <div class="header-decoration">
+            <!-- 浮动装饰元素 -->
+            <svg class="floating-elements" viewBox="0 0 1000 280" preserveAspectRatio="none">
+                <!-- 圆形装饰 -->
+                <circle cx="120" cy="60" r="40" fill="#FFFFFF" opacity="0.15"/>
+                <circle cx="180" cy="100" r="25" fill="#FFFFFF" opacity="0.12"/>
+                <circle cx="85" cy="120" r="30" fill="#FFFFFF" opacity="0.1"/>
+                
+                <!-- 花瓣装饰 -->
+                <g transform="translate(850, 80)">
+                    <circle cx="0" cy="0" r="35" fill="#FFFFFF" opacity="0.15"/>
+                    <circle cx="25" cy="25" r="20" fill="#FFFFFF" opacity="0.12"/>
+                    <circle cx="-25" cy="25" r="20" fill="#FFFFFF" opacity="0.12"/>
+                    <circle cx="0" cy="35" r="15" fill="#FFFFFF" opacity="0.1"/>
+                </g>
+                
+                <!-- 星星装饰 -->
+                <path d="M750,40 L755,50 L765,52 L757,60 L759,70 L750,65 L741,70 L743,60 L735,52 L745,50 Z" fill="#FFFFFF" opacity="0.2"/>
+                <path d="M820,150 L823,157 L830,158 L825,163 L826,170 L820,167 L814,170 L815,163 L810,158 L817,157 Z" fill="#FFFFFF" opacity="0.18"/>
+                
+                <!-- 叶子装饰 -->
+                <g transform="translate(300, 50)">
+                    <ellipse cx="0" cy="0" rx="40" ry="20" fill="#FFFFFF" opacity="0.12" transform="rotate(30)"/>
+                    <ellipse cx="30" cy="20" rx="35" ry="18" fill="#FFFFFF" opacity="0.1" transform="rotate(-20)"/>
+                </g>
+                
+                <!-- 心形装饰 -->
+                <path d="M600,100 C600,90 590,85 585,85 C580,85 575,90 575,95 C575,90 570,85 565,85 C560,85 550,90 550,100 C550,115 575,125 575,125 C575,125 600,115 600,100 Z" fill="#FFFFFF" opacity="0.15"/>
+            </svg>
+            
+            <!-- 波浪背景 -->
+            <svg class="wave-bg" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path d="M0,30 Q250,80 500,30 T1000,30 L1000,100 L0,100 Z" fill="#FFFFFF" opacity="0.9"/>
+                <path d="M0,50 Q250,95 500,50 T1000,50 L1000,100 L0,100 Z" fill="#FFFFFF" opacity="0.7"/>
+                <path d="M0,70 Q250,100 500,70 T1000,70 L1000,100 L0,100 Z" fill="#FFFFFF"/>
+            </svg>
+        </div>
+        
+        <!-- 个人信息区域 -->
+        <div class="profile-section">
+            <div class="profile-header">
+                <div class="avatar-container">
+                    <!-- 头像图片 -->
+                    <img class="avatar" src="黄芷菁.png" alt="黄芷菁">
+                    
+                    <!-- 头像装饰 -->
+                    <svg class="avatar-decoration" width="30" height="30" viewBox="0 0 30 30">
+                        <circle cx="15" cy="15" r="14" fill="#FFD93D" stroke="#FFFFFF" stroke-width="2"/>
+                        <path d="M15,8 L16,12 L20,12 L17,15 L18,19 L15,17 L12,19 L13,15 L10,12 L14,12 Z" fill="#FFFFFF"/>
+                    </svg>
+                </div>
+                
+                <div class="profile-info">
+                    <h1>黄芷菁</h1>
+                    <div class="job-title">前端开发工程师 | 1年工作经验 | 女 | 24岁</div>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24">
+                                <path d="M20,4H4C2.9,4,2,4.9,2,6v12c0,1.1,0.9,2,2,2h16c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8l-8,5L4,8V6l8,5l8-5V8z"/>
+                            </svg>
+                            18470180701@163.com
+                        </div>
+                        <div class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24">
+                                <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"/>
+                            </svg>
+                            深圳
+                        </div>
+                        <div class="contact-item">
+                            <svg width="18" height="18" viewBox="0 0 24 24">
+                                <path d="M16,11H13V14H11V11H8V9H11V6H13V9H16M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"/>
+                            </svg>
+                            期望薪资：9-13K
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 个人优势 -->
+        <div class="section">
+            <h2 class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24">
+                    <path fill="#FF9800" d="M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"/>
+                </svg>
+                个人优势
+            </h2>
+            <div class="advantage-item">
+                <strong>1. 自我学习：</strong>具备强大的自我学习能力，熟练应用多种人工智能大语言模型（如 cursor，trae等），能够快速掌握新技术和新工具，为项目带来创新解决方案。
+            </div>
+            <div class="advantage-item">
+                <strong>2. 沟通能力：</strong>拥有卓越的沟通技巧，能够有效协调团队成员，推动项目进展，确保项目按时高质量完成。
+            </div>
+            <div class="advantage-item">
+                <strong>3. 团队合作：</strong>高度的责任心和良好的团队合作精神，能够与不同角色的团队成员高效合作，共同推动项目成功。
+            </div>
+        </div>
+        
+        <!-- 教育背景 -->
+        <div class="section">
+            <h2 class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24">
+                    <path fill="#FF9800" d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                </svg>
+                教育背景
+            </h2>
+            <div class="item">
+                <div class="item-title">江西软件职业技术大学</div>
+                <div class="item-subtitle">软件工程技术 | 本科 | 专业排名：前3%</div>
+                <div class="item-period">2021.09 - 2025.06</div>
+                <div class="item-content">
+                    <p><strong>主修课程：</strong>Java程序设计、基于Java的Web编程技术、Web前端开发技术、计算机网络原理、J2EE应用开发技术等</p>
+                    <p style="margin-top: 10px;"><strong>获得荣誉：</strong></p>
+                    <ul>
+                        <li>2024-12 国家奖学金</li>
+                        <li>2024-05 软件设计师中级</li>
+                        <li>2023-12 国家励志奖学金</li>
+                        <li>2023-04 蓝桥杯大学组web应用开发省赛一等奖</li>
+                        <li>2023-06 蓝桥杯大学组web应用开发国赛三等奖</li>
+                        <li>2023-12 江西省职业院校技能大赛二等奖</li>
+                        <li>蝉联2022-12、2023-12 江西省大学生科技创新竞赛一等奖</li>
+                        <li>2023-12 web前端开发职业技能等级证书</li>
+                        <li>2023-09 计算机等级三级网络技术证书</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 工作经历 -->
+        <div class="section">
+            <h2 class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24">
+                    <path fill="#FF9800" d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V19A2,2 0 0,1 20,21H4C2.89,21 2,20.1 2,19V8C2,6.89 2.89,6 4,6H8V4C8,2.89 8.89,2 10,2M14,6V4H10V6H14Z"/>
+                </svg>
+                工作经历
+            </h2>
+            
+            <div class="item">
+                <div class="item-title">奥尔特云（深圳）智慧科技有限公司</div>
+                <div class="item-subtitle">前端开发工程师</div>
+                <div class="item-period">2024.10 - 至今</div>
+                <div class="item-content">
+                    <p><strong>工作内容：</strong></p>
+                    <ul>
+                        <li>系统功能开发与管理：负责数据展示模块，通过 PC 端实现数据分析与管理，同时为 H5 客户端开发用户操作界面，确保系统功能流畅运行，提升用户体验。</li>
+                        <li>地理信息展示与优化：使用 Leaflet 地图技术，负责地理信息的展示与地图渲染效果的优化，增强数据可视化能力，为用户提供直观的地理数据展示。</li>
+                        <li>用户安全与管理功能开发：实现双因子登录功能，增强系统数据安全性。开发个人中心页面，实现用户及通讯录的统一管理，并支持智慧园林等模块，提升用户操作便捷性与数据安全性。</li>
+                        <li>H5 页面设计与开发：设计并开发考勤管理、智慧园林及问题反馈等 H5 页面，确保页面准确绘制与高效对接，支持公司各项业务的顺利开展，满足不同业务场景需求。</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>业绩成果：</strong></p>
+                    <ul>
+                        <li>优化前端代码，提升用户体验，为公司带来几百万收益</li>
+                        <li>精通 HTML5、CSS3、JavaScript 及 React、Vue.js 等现代框架，引入 AI 技术实现智能内容推荐和用户行为预测，提升用户参与度和满意度</li>
+                        <li>负责部分地图功能开发与优化，实现精准定位、路径规划和地理信息展示</li>
+                        <li>建立高效前端开发流程，缩短开发周期，提高交付效率</li>
+                        <li>与后端团队紧密合作，确保前后端数据交互高效稳定。参与项目需求评审和技术方案讨论，提供前端技术建议</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 项目经验 -->
+        <div class="section">
+            <h2 class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24">
+                    <path fill="#FF9800" d="M19,4H15.5L14.5,3H9.5L8.5,4H5V6H19M6,19A2,2 0 0,0 8,21H16A2,2 0 0,0 18,19V7H6V19Z"/>
+                </svg>
+                项目经验
+            </h2>
+            
+            <div class="item">
+                <div class="item-title">档案宝</div>
+                <div class="item-subtitle">技术栈：Vue3 + Element Plus + ECharts + Axios</div>
+                <div class="item-period">2025.04 - 2025.09</div>
+                <div class="item-content">
+                    <p><strong>项目简介：</strong>档案宝是一个集档案采集、整理、鉴定与利用于一体的全生命周期管理平台，旨在实现文件档案的一体化与数字化管理。</p>
+                    <p style="margin-top: 10px;"><strong>个人职责：</strong></p>
+                    <ul>
+                        <li>主要负责核心的"文件归档"模块，独立完成了前端页面开发、数据可视化图表集成</li>
+                        <li>负责所有后端接口的对接与联调工作</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>业绩成果：</strong></p>
+                    <ul>
+                        <li>通过"文件归档"等核心模块的线上化流程，将传统纸质/零散文件的归档处理时间缩短了约 40%，显著减少了人工操作与等待时间</li>
+                        <li>具备了独立使用 Element Plus + ECharts 完成中后台管理系统前端页面和数据可视化开发的能力</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">智慧园林</div>
+                <div class="item-subtitle">技术栈：Vue3 + Vant4 + Element Plus + Leaflet + Axios</div>
+                <div class="item-period">2024.10 - 2025.03</div>
+                <div class="item-content">
+                    <p><strong>项目简介：</strong>打造智慧园林一张网管理系统，整合绿地管理、创园服务、古树名木管理、辅助决策分析和园林宏观监管等功能，实现城市园林绿化信息的集中展示与交互操作。</p>
+                    <p style="margin-top: 10px;"><strong>个人职责：</strong></p>
+                    <ul>
+                        <li>使用Vue3+Vant4+Element Plus等独立完成H5与PC双端开发</li>
+                        <li>将古树管理从线下纸质档案升级为线上动态管理</li>
+                        <li>开发养护计划页面与绿地图层功能。实现了养护任务的标准化流程管理，并通过地图图层直观展示绿地资源分布</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>业绩成果：</strong></p>
+                    <ul>
+                        <li>独立完成该模块H5与PC端全链路开发</li>
+                        <li>实现古树信息线上化管理，查询效率提升60%</li>
+                        <li>掌握了跨端开发全流程，深化了Vue3组合式API的应用能力</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="item">
+                <div class="item-title">低代码平台</div>
+                <div class="item-subtitle">技术栈：Vue3 + Element Plus + TypeScript + 可视化拖拽引擎</div>
+                <div class="item-period">2023.06 - 2024.09</div>
+                <div class="item-content">
+                    <p><strong>项目简介：</strong>企业级低代码开发平台，通过可视化拖拽和配置化开发方式，让业务人员和开发人员能够快速构建应用系统，大幅提升开发效率。</p>
+                    <p style="margin-top: 10px;"><strong>个人职责：</strong></p>
+                    <ul>
+                        <li>负责前端可视化编辑器的核心功能开发，实现组件拖拽、属性配置、页面预览等核心能力</li>
+                        <li>开发表单设计器、流程设计器等关键模块，支持复杂业务场景的可视化配置</li>
+                        <li>实现动态表单渲染引擎，支持30+常用组件类型和自定义组件扩展</li>
+                        <li>参与组件库设计与开发，封装可复用的业务组件和基础组件</li>
+                        <li>优化编辑器性能，通过虚拟滚动、按需加载等技术提升大型页面的编辑流畅度</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>业绩成果：</strong></p>
+                    <ul>
+                        <li>平台上线后，应用开发效率提升70%以上，传统2周的开发工作缩短至2-3天</li>
+                        <li>累计支持企业创建500+个应用，服务10000+用户</li>
+                        <li>深度掌握Vue3响应式原理和组合式API，提升了复杂前端架构设计能力</li>
+                        <li>积累了可视化编辑器、拖拽引擎等前端领域的深度技术经验</li>
+                    </ul>
+                    <p style="margin-top: 10px;"><strong>在线演示：</strong><a href="http://demoa5.tongzhouyun.com/index" target="_blank" style="color: #FF9800; text-decoration: none;">http://demoa5.tongzhouyun.com/index</a></p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 专业技能 -->
+        <div class="section">
+            <h2 class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24">
+                    <path fill="#FF9800" d="M9,3L5,7L9,11V9H16V7H9V5M16,13V11L20,15L16,19V17H9V15H16Z"/>
+                </svg>
+                专业技能
+            </h2>
+            <div class="item-content">
+                <ul>
+                    <li>熟悉掌握Java基础知识，如集合、IO等，具有良好的编码习惯</li>
+                    <li>熟悉JVM的基础知识，如运行时数据区域、类加载机制、垃圾回收机制等</li>
+                    <li>熟练使用 MySQL、Redis 等关系型和非关系型数据库，如Redis缓存穿透、击穿等问题解决</li>
+                    <li>熟练运用 SpringMVC、SpringBoot、Mybatis和了解SpringCloud 常用框架</li>
+                    <li>熟练运用 Git 和 Maven 版本控制工具的使用</li>
+                    <li>熟悉 Linux 操作系统及常用命令、Docker常用命令</li>
+                    <li>熟悉计算机网络相关知识，如OSI七层模型，了解TCP/IP、HTTP等协议</li>
+                    <li>熟悉前端 Vue、html、css、js等技术的基本使用，并熟悉使用Element Plus、vant4等相关组件库</li>
+                </ul>
+            </div>
+            
+            <div style="margin-top: 20px;">
+                <div class="skills-container">
+                    <span class="skill-tag">Vue.js / Vue3</span>
+                    <span class="skill-tag">JavaScript / HTML / CSS</span>
+                    <span class="skill-tag">Element Plus / Vant4</span>
+                    <span class="skill-tag">ECharts</span>
+                    <span class="skill-tag">Leaflet 地图</span>
+                    <span class="skill-tag">Java / SpringBoot</span>
+                    <span class="skill-tag">MySQL / Redis</span>
+                    <span class="skill-tag">Git / Maven</span>
+                    <span class="skill-tag">Docker / Linux</span>
+                    <span class="skill-tag">AI 工具应用</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 证书荣誉 -->
+        <div class="section">
+            <h2 class="section-title">
+                <svg class="section-icon" viewBox="0 0 24 24">
+                    <path fill="#FF9800" d="M16,11H13V14H11V11H8V9H11V6H13V9H16M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4Z"/>
+                </svg>
+                资格证书
+            </h2>
+            <div class="item-content">
+                <ul>
+                    <li>软件设计师中级证书</li>
+                    <li>Web前端开发职业技能等级证书</li>
+                    <li>全国计算机三级网络技术证书</li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 底部装饰 -->
+        <div class="footer-decoration">
+            <svg width="100%" height="100" viewBox="0 0 1000 100" preserveAspectRatio="none">
+                <path d="M0,30 Q250,10 500,30 T1000,30 L1000,100 L0,100 Z" fill="#FFF9E6" opacity="0.5"/>
+                <path d="M0,50 Q250,30 500,50 T1000,50 L1000,100 L0,100 Z" fill="#FFE082" opacity="0.3"/>
+                
+                <!-- 底部花朵装饰 -->
+                <g transform="translate(100, 20)">
+                    <circle cx="0" cy="0" r="8" fill="#FFD93D" opacity="0.6"/>
+                    <circle cx="10" cy="10" r="6" fill="#FFB74D" opacity="0.5"/>
+                    <circle cx="-10" cy="10" r="6" fill="#FFB74D" opacity="0.5"/>
+                </g>
+                
+                <g transform="translate(900, 30)">
+                    <circle cx="0" cy="0" r="10" fill="#FFD93D" opacity="0.6"/>
+                    <circle cx="12" cy="8" r="7" fill="#FFB74D" opacity="0.5"/>
+                    <circle cx="-12" cy="8" r="7" fill="#FFB74D" opacity="0.5"/>
+                </g>
+                
+                <!-- 星星装饰 -->
+                <path d="M500,20 L502,25 L507,26 L503,30 L504,35 L500,33 L496,35 L497,30 L493,26 L498,25 Z" fill="#FFD93D" opacity="0.7"/>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>
+
