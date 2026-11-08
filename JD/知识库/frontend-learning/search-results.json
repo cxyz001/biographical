@@ -1,0 +1,67 @@
+[
+  {
+    "query": "react documentation",
+    "results": [
+      {
+        "repository": "reactjs/react.dev",
+        "url": "https://github.com/reactjs/react.dev"
+      },
+      {
+        "repository": "react-hook-form/documentation",
+        "url": "https://github.com/react-hook-form/documentation"
+      }
+    ]
+  },
+  {
+    "query": "vue documentation",
+    "results": [
+      {
+        "repository": "vuejs/docs",
+        "url": "https://github.com/vuejs/docs"
+      },
+      {
+        "repository": "vuejs/v2.vuejs.org",
+        "url": "https://github.com/vuejs/v2.vuejs.org"
+      }
+    ]
+  },
+  {
+    "query": "typescript handbook",
+    "results": [
+      {
+        "repository": "microsoft/TypeScript-Handbook",
+        "url": "https://github.com/microsoft/TypeScript-Handbook"
+      },
+      {
+        "repository": "typescript-kr/typescript-kr.github.io",
+        "url": "https://github.com/typescript-kr/typescript-kr.github.io"
+      }
+    ]
+  },
+  {
+    "query": "frontend mock service worker",
+    "results": [
+      {
+        "repository": "JasonBoy/msw-mcp",
+        "url": "https://github.com/JasonBoy/msw-mcp"
+      },
+      {
+        "repository": "dellenshang/mock-service-worker-tool",
+        "url": "https://github.com/dellenshang/mock-service-worker-tool"
+      }
+    ]
+  },
+  {
+    "query": "playwright end to end",
+    "results": [
+      {
+        "repository": "microsoft/playwright-pytest",
+        "url": "https://github.com/microsoft/playwright-pytest"
+      },
+      {
+        "repository": "microsoft/playwright-test",
+        "url": "https://github.com/microsoft/playwright-test"
+      }
+    ]
+  }
+]

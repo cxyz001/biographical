@@ -1,0 +1,145 @@
+[
+  {
+    "repository": "mdn/content",
+    "branch": "main",
+    "path": "files/en-us/learn_web_development/core/scripting/fetching_data/index.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/mdn/content/blob/main/files/en-us/learn_web_development/core/scripting/fetching_data/index.md",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repository": "microsoft/TypeScript-Website",
+    "branch": "v2",
+    "path": "packages/documentation/copy/en/handbook-v2/Narrowing.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/microsoft/TypeScript-Website/blob/v2/packages/documentation/copy/en/handbook-v2/Narrowing.md",
+    "characters": 25780,
+    "sha256": "4836a29bbb3097085d0b21d0631ac464fcfb2a8719a17f4602e892d2be4f337e"
+  },
+  {
+    "repository": "reactjs/react.dev",
+    "branch": "main",
+    "path": "src/content/learn/synchronizing-with-effects.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/reactjs/react.dev/blob/main/src/content/learn/synchronizing-with-effects.md",
+    "characters": 61954,
+    "sha256": "75cd806a4f3bcf9ef045533b54fb2b91847c8c361dfd9432a49c94c20c153c7e"
+  },
+  {
+    "repository": "vuejs/docs",
+    "branch": "main",
+    "path": "src/guide/essentials/reactivity-fundamentals.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/vuejs/docs/blob/main/src/guide/essentials/reactivity-fundamentals.md",
+    "characters": 20374,
+    "sha256": "878da84b39a717acff14150afb3c3bf401c6f08740221902373a79cdf280c719"
+  },
+  {
+    "repository": "vitejs/vite",
+    "branch": "main",
+    "path": "docs/guide/env-and-mode.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/vitejs/vite/blob/main/docs/guide/env-and-mode.md",
+    "characters": 10879,
+    "sha256": "c15b7b8483c2ba01486e49f150aa79d987577a85eea3e580be80b9e71d07badc"
+  },
+  {
+    "repository": "TanStack/query",
+    "branch": "main",
+    "path": "docs/framework/react/guides/query-keys.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/TanStack/query/blob/main/docs/framework/react/guides/query-keys.md",
+    "characters": 3385,
+    "sha256": "dbd62ca3fc372cada909b9282e2f9ac94e4c695a078fee17b4660df2dd4ac413"
+  },
+  {
+    "repository": "vercel/next.js",
+    "branch": "canary",
+    "path": "docs/01-app/03-api-reference/01-directives/use-client.mdx",
+    "date": "2026-10-23",
+    "url": "https://github.com/vercel/next.js/blob/canary/docs/01-app/03-api-reference/01-directives/use-client.mdx",
+    "characters": 3894,
+    "sha256": "12eb4f6e112bff41a0518717bbe107e10587f27d12a7d56da56d10976018b793"
+  },
+  {
+    "repository": "OAI/OpenAPI-Specification",
+    "branch": "main",
+    "path": "versions/3.1.1.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/OAI/OpenAPI-Specification/blob/main/versions/3.1.1.md",
+    "characters": 212529,
+    "sha256": "a612d2b72d422925616b2cabfa7acc0419ffaaf4b0eb42bfb11dc9b804f92749"
+  },
+  {
+    "repository": "mswjs/msw",
+    "branch": "main",
+    "path": "README.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/mswjs/msw/blob/main/README.md",
+    "characters": 12246,
+    "sha256": "061d5c796e8b611faa32381b37038670c5e007e2ad1dc8bcbb5c66c7a608a646"
+  },
+  {
+    "repository": "microsoft/playwright",
+    "branch": "main",
+    "path": "README.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/microsoft/playwright/blob/main/README.md",
+    "characters": 11259,
+    "sha256": "31c54472820cfecbc7706f2fd114e3cdb4b66dd0106c5e5843e43f56bcf5ac25"
+  },
+  {
+    "repository": "vitest-dev/vitest",
+    "branch": "main",
+    "path": "docs/guide/index.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/vitest-dev/vitest/blob/main/docs/guide/index.md",
+    "characters": 7869,
+    "sha256": "1bd3de04974b5c03b31e603755dee6600a2a4ccdfbf578f13811ce611b755988"
+  },
+  {
+    "repository": "GoogleChrome/web-vitals",
+    "branch": "main",
+    "path": "README.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/GoogleChrome/web-vitals/blob/main/README.md",
+    "characters": 58413,
+    "sha256": "b2d8889df1ddb4b4b2cbd53de47c76697be4971452dd62a2ce0e3c1f1be68cba"
+  },
+  {
+    "repository": "electron/electron",
+    "branch": "main",
+    "path": "docs/tutorial/security.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/electron/electron/blob/main/docs/tutorial/security.md",
+    "characters": 32549,
+    "sha256": "9bec21b1e4e451fb710685d09e0cdfd1770df02ffd44ad6afebf976f4cbac50a"
+  },
+  {
+    "repository": "expressjs/express",
+    "branch": "master",
+    "path": "Readme.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/expressjs/express/blob/master/Readme.md",
+    "characters": 10372,
+    "sha256": "3cf5f3e224dbb9b5e2bc0ac255871de453762ae7a277f868da5f4a69d6ff2509"
+  },
+  {
+    "repository": "apache/echarts",
+    "branch": "master",
+    "path": "README.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/apache/echarts/blob/master/README.md",
+    "characters": 4162,
+    "sha256": "8cc8864325843d975f082cba0fd4cf208093feffb03568f48f164725dab8ebf9"
+  },
+  {
+    "repository": "single-spa/single-spa",
+    "branch": "main",
+    "path": "README.md",
+    "date": "2026-10-23",
+    "url": "https://github.com/single-spa/single-spa/blob/main/README.md",
+    "characters": 4247,
+    "sha256": "6c11372cbfc0cad8292d2a922645271d26c276c67abebc0177ddcf7f64b76f88"
+  }
+]

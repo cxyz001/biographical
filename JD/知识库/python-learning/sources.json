@@ -1,0 +1,276 @@
+{
+  "note": "Hashes identify downloaded UTF-8 text, not Git commits. Branch links can change. Only successfully retrieved files are included.",
+  "checked_date": "2026-10-23",
+  "sources": [
+    {
+      "repository": "python/cpython",
+      "branch": "3.11",
+      "path": "Doc/tutorial/controlflow.rst",
+      "github_url": "https://github.com/python/cpython/blob/3.11/Doc/tutorial/controlflow.rst",
+      "raw_url": "https://raw.githubusercontent.com/python/cpython/3.11/Doc/tutorial/controlflow.rst",
+      "checked_date": "2026-10-23",
+      "text_sha256": "23844cf6d42e67063c7ef9354a2529da7c0b02266e46d9d3823d5f6c0f1b7809",
+      "text_characters": 39834
+    },
+    {
+      "repository": "python/cpython",
+      "branch": "3.11",
+      "path": "Doc/tutorial/datastructures.rst",
+      "github_url": "https://github.com/python/cpython/blob/3.11/Doc/tutorial/datastructures.rst",
+      "raw_url": "https://raw.githubusercontent.com/python/cpython/3.11/Doc/tutorial/datastructures.rst",
+      "checked_date": "2026-10-23",
+      "text_sha256": "93a586700969ecd22e5e4026f34ed5c56a2a065f5387a5fa340032c707c3fda7",
+      "text_characters": 24844
+    },
+    {
+      "repository": "python/cpython",
+      "branch": "3.11",
+      "path": "Doc/library/asyncio-task.rst",
+      "github_url": "https://github.com/python/cpython/blob/3.11/Doc/library/asyncio-task.rst",
+      "raw_url": "https://raw.githubusercontent.com/python/cpython/3.11/Doc/library/asyncio-task.rst",
+      "checked_date": "2026-10-23",
+      "text_sha256": "3a44c0a037659e47b00c9ba4e5fcb6002bc25bfa92901b4cbde169c5e73a11c3",
+      "text_characters": 40225
+    },
+    {
+      "repository": "python/cpython",
+      "branch": "3.11",
+      "path": "Doc/library/concurrent.futures.rst",
+      "github_url": "https://github.com/python/cpython/blob/3.11/Doc/library/concurrent.futures.rst",
+      "raw_url": "https://raw.githubusercontent.com/python/cpython/3.11/Doc/library/concurrent.futures.rst",
+      "checked_date": "2026-10-23",
+      "text_sha256": "9b03221139aff6f5cc1e0d5bc9d3c04617618d9df43186f7a08985ee3b8979d5",
+      "text_characters": 21332
+    },
+    {
+      "repository": "pypa/sampleproject",
+      "branch": "main",
+      "path": "pyproject.toml",
+      "github_url": "https://github.com/pypa/sampleproject/blob/main/pyproject.toml",
+      "raw_url": "https://raw.githubusercontent.com/pypa/sampleproject/main/pyproject.toml",
+      "checked_date": "2026-10-23",
+      "text_sha256": "e4ce3af8b9396db683e4f967f09562cd2b61017f3c9b31ef7eb810cb24c6d206",
+      "text_characters": 6684
+    },
+    {
+      "repository": "pypa/packaging.python.org",
+      "branch": "main",
+      "path": "source/tutorials/packaging-projects.rst",
+      "github_url": "https://github.com/pypa/packaging.python.org/blob/main/source/tutorials/packaging-projects.rst",
+      "raw_url": "https://raw.githubusercontent.com/pypa/packaging.python.org/main/source/tutorials/packaging-projects.rst",
+      "checked_date": "2026-10-23",
+      "text_sha256": "f1e37a2ac66d6ad10f24c16a8dbaba998dd05c2da20e0fcdf82ba711b183f09d",
+      "text_characters": 20574
+    },
+    {
+      "repository": "fastapi/fastapi",
+      "branch": "master",
+      "path": "docs/en/docs/async.md",
+      "github_url": "https://github.com/fastapi/fastapi/blob/master/docs/en/docs/async.md",
+      "raw_url": "https://raw.githubusercontent.com/fastapi/fastapi/master/docs/en/docs/async.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "5c112ab0e608d07324b13d9e8e61f670a932437a159d34e6a73779f65bfc9960",
+      "text_characters": 23685
+    },
+    {
+      "repository": "fastapi/fastapi",
+      "branch": "master",
+      "path": "docs/en/docs/tutorial/background-tasks.md",
+      "github_url": "https://github.com/fastapi/fastapi/blob/master/docs/en/docs/tutorial/background-tasks.md",
+      "raw_url": "https://raw.githubusercontent.com/fastapi/fastapi/master/docs/en/docs/tutorial/background-tasks.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "7a34e7a4a7bd2cb9e0b465588b77cf007b0a5c8bdcf7530ff3619ff6b3642468",
+      "text_characters": 4786
+    },
+    {
+      "repository": "pydantic/pydantic",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/pydantic/pydantic/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/pydantic/pydantic/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "accb7413ab1829ea2844ba58d837f4321997d7ce6d94544f565c4f49f8ff8bd5",
+      "text_characters": 3594
+    },
+    {
+      "repository": "encode/httpx",
+      "branch": "master",
+      "path": "docs/async.md",
+      "github_url": "https://github.com/encode/httpx/blob/master/docs/async.md",
+      "raw_url": "https://raw.githubusercontent.com/encode/httpx/master/docs/async.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "b0722b05e5b8aad6b2518fda345907092a5d4f11c337d50242f7a0a03e739e5b",
+      "text_characters": 6416
+    },
+    {
+      "repository": "sqlalchemy/sqlalchemy",
+      "branch": "main",
+      "path": "README.rst",
+      "github_url": "https://github.com/sqlalchemy/sqlalchemy/blob/main/README.rst",
+      "raw_url": "https://raw.githubusercontent.com/sqlalchemy/sqlalchemy/main/README.rst",
+      "checked_date": "2026-10-23",
+      "text_sha256": "326efb4f98f6ff5222da0653e9fcf115e22d92e5c3e8bda5823e4daa9e901a9c",
+      "text_characters": 5701
+    },
+    {
+      "repository": "sqlalchemy/sqlalchemy",
+      "branch": "main",
+      "path": "doc/build/orm/session_basics.rst",
+      "github_url": "https://github.com/sqlalchemy/sqlalchemy/blob/main/doc/build/orm/session_basics.rst",
+      "raw_url": "https://raw.githubusercontent.com/sqlalchemy/sqlalchemy/main/doc/build/orm/session_basics.rst",
+      "checked_date": "2026-10-23",
+      "text_sha256": "fdaeee879d1c6eac1bd85b351cc19d35a7e8060f2f8eb15d98362fa1a74daed9",
+      "text_characters": 46752
+    },
+    {
+      "repository": "celery/celery",
+      "branch": "main",
+      "path": "docs/userguide/tasks.rst",
+      "github_url": "https://github.com/celery/celery/blob/main/docs/userguide/tasks.rst",
+      "raw_url": "https://raw.githubusercontent.com/celery/celery/main/docs/userguide/tasks.rst",
+      "checked_date": "2026-10-23",
+      "text_sha256": "facf48e68329769253edd0ab18dea613fd2c944b962862e7df076a5ef131e455",
+      "text_characters": 79401
+    },
+    {
+      "repository": "pytest-dev/pytest",
+      "branch": "main",
+      "path": "doc/en/how-to/fixtures.rst",
+      "github_url": "https://github.com/pytest-dev/pytest/blob/main/doc/en/how-to/fixtures.rst",
+      "raw_url": "https://raw.githubusercontent.com/pytest-dev/pytest/main/doc/en/how-to/fixtures.rst",
+      "checked_date": "2026-10-23",
+      "text_sha256": "0c2fca477f8032b8f898756cb184b06490ea3ac44c047b0cb5f84b562269de92",
+      "text_characters": 62068
+    },
+    {
+      "repository": "astral-sh/ruff",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/astral-sh/ruff/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/astral-sh/ruff/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "63dcb147711dd8213c11c8d43a1350a7d76245624fd5b37fbfba41af24e24fb4",
+      "text_characters": 19599
+    },
+    {
+      "repository": "astral-sh/uv",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/astral-sh/uv/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/astral-sh/uv/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "57a84a5a635f30e3a26541ebc16ca690944a7750f05713b1af92d3170b58f704",
+      "text_characters": 9853
+    },
+    {
+      "repository": "numpy/numpy",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/numpy/numpy/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/numpy/numpy/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "b2aef38c7633af8cc43be494004da614e719cb20041beecaaa44566fe663a6ec",
+      "text_characters": 4405
+    },
+    {
+      "repository": "pandas-dev/pandas",
+      "branch": "main",
+      "path": "doc/source/user_guide/indexing.rst",
+      "github_url": "https://github.com/pandas-dev/pandas/blob/main/doc/source/user_guide/indexing.rst",
+      "raw_url": "https://raw.githubusercontent.com/pandas-dev/pandas/main/doc/source/user_guide/indexing.rst",
+      "checked_date": "2026-10-23",
+      "text_sha256": "91b8fdb79f1fc48c80ad547371e9ed8bd423507af8e2d23512df79a02976dab9",
+      "text_characters": 57641
+    },
+    {
+      "repository": "scikit-learn/scikit-learn",
+      "branch": "main",
+      "path": "doc/common_pitfalls.rst",
+      "github_url": "https://github.com/scikit-learn/scikit-learn/blob/main/doc/common_pitfalls.rst",
+      "raw_url": "https://raw.githubusercontent.com/scikit-learn/scikit-learn/main/doc/common_pitfalls.rst",
+      "checked_date": "2026-10-23",
+      "text_sha256": "6e2b42374fbb521c35f29eeab05bcbfa9744eed344b5f92e41013338ff60a2f5",
+      "text_characters": 25066
+    },
+    {
+      "repository": "pytorch/tutorials",
+      "branch": "main",
+      "path": "beginner_source/basics/intro.py",
+      "github_url": "https://github.com/pytorch/tutorials/blob/main/beginner_source/basics/intro.py",
+      "raw_url": "https://raw.githubusercontent.com/pytorch/tutorials/main/beginner_source/basics/intro.py",
+      "checked_date": "2026-10-23",
+      "text_sha256": "8ce0c6c6f2c59431cbb0bc1f0a4cc05e6436caf9f6de74b034ed22947a624911",
+      "text_characters": 2465
+    },
+    {
+      "repository": "microsoft/onnxruntime",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/microsoft/onnxruntime/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/onnxruntime/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "d9de78283cf00a77f907f2183fb8df1dda8706b79e4ab3517f2a06c6de0c6a4c",
+      "text_characters": 3087
+    },
+    {
+      "repository": "mlflow/mlflow",
+      "branch": "master",
+      "path": "README.md",
+      "github_url": "https://github.com/mlflow/mlflow/blob/master/README.md",
+      "raw_url": "https://raw.githubusercontent.com/mlflow/mlflow/master/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "e9b30b8aee35e78fb87bdbbfcf837e8739f596aef5f6def89e735680d7d8b00e",
+      "text_characters": 33058
+    },
+    {
+      "repository": "huggingface/peft",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/huggingface/peft/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/huggingface/peft/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "65958fdf047de668cb2abd1c34dace3082d46680b98ae781b8bd2db38486e13e",
+      "text_characters": 12235
+    },
+    {
+      "repository": "huggingface/trl",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/huggingface/trl/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/huggingface/trl/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "79285b14d679df55eb4338f78304a9779fc62bdbdaa1548afa4c2f5421051019",
+      "text_characters": 9123
+    },
+    {
+      "repository": "pyinstaller/pyinstaller",
+      "branch": "develop",
+      "path": "README.rst",
+      "github_url": "https://github.com/pyinstaller/pyinstaller/blob/develop/README.rst",
+      "raw_url": "https://raw.githubusercontent.com/pyinstaller/pyinstaller/develop/README.rst",
+      "checked_date": "2026-10-23",
+      "text_sha256": "c6be1b0e62306f3f5da22f4131c3cf799e4234b86a1d6624a4be0e206a886aea",
+      "text_characters": 5384
+    },
+    {
+      "repository": "fastapi/typer",
+      "branch": "master",
+      "path": "README.md",
+      "github_url": "https://github.com/fastapi/typer/blob/master/README.md",
+      "raw_url": "https://raw.githubusercontent.com/fastapi/typer/master/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "bf8950e2811991353a9e21b4cd44545354b52e5745ce14b0bedd38371dc91c99",
+      "text_characters": 12301
+    },
+    {
+      "repository": "microsoft/qlib",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/microsoft/qlib/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/qlib/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "e9f7cc8eeb60e3fe3784ec496e350ecb584157c3240cda0651c20acb26fd9037",
+      "text_characters": 44161
+    }
+  ]
+}

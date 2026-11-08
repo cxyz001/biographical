@@ -1,0 +1,39 @@
+{
+  "checked_date": "2026-10-23",
+  "searches": [
+    {
+      "query": "python tutorial beginner",
+      "results": [
+        {
+          "repository": "aymericdamien/TensorFlow-Examples",
+          "url": "https://github.com/aymericdamien/TensorFlow-Examples",
+          "description": "TensorFlow Tutorial and Examples for Beginners (support TF v1 & v2)"
+        },
+        {
+          "repository": "Yixiaohan/codeparkshare",
+          "url": "https://github.com/Yixiaohan/codeparkshare",
+          "description": "Python初学者（零基础学习Python、Python入门）书籍、视频、资料、社区推荐"
+        },
+        {
+          "repository": "rougier/matplotlib-tutorial",
+          "url": "https://github.com/rougier/matplotlib-tutorial",
+          "description": "Matplotlib tutorial for beginner"
+        },
+        {
+          "repository": "CodecWang/opencv-python-tutorial",
+          "url": "https://github.com/CodecWang/opencv-python-tutorial",
+          "description": "📖 OpenCV-Python image processing tutorial for beginners"
+        },
+        {
+          "repository": "swaroopch/byte-of-python",
+          "url": "https://github.com/swaroopch/byte-of-python",
+          "description": "Beginners book on Python - start here if you don't know programming"
+        }
+      ]
+    },
+    {
+      "query": "python fastapi production machine learning",
+      "error": "<urlopen error _ssl.c:989: The handshake operation timed out>"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "note": "Hashes identify retrieved UTF-8 text, not Git commits. Branch links may change.",
+  "sources": [
+    {
+      "repository": "golang/go",
+      "branch": "master",
+      "path": "README.md",
+      "github_url": "https://github.com/golang/go/blob/master/README.md",
+      "raw_url": "https://raw.githubusercontent.com/golang/go/master/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "8247b7c5de1e74854aac1a08aa5894444d1d33b4045c70d5cc3367ad0e25c3f3",
+      "text_characters": 1454
+    },
+    {
+      "repository": "golang/go",
+      "branch": "master",
+      "path": "src/context/context.go",
+      "github_url": "https://github.com/golang/go/blob/master/src/context/context.go",
+      "raw_url": "https://raw.githubusercontent.com/golang/go/master/src/context/context.go",
+      "checked_date": "2026-10-23",
+      "text_sha256": "684eddd51025cbe7537cf125cbce33fe40f07af4059536b09a0d4e199f6b1762",
+      "text_characters": 25275
+    },
+    {
+      "repository": "golang/go",
+      "branch": "master",
+      "path": "src/runtime/HACKING.md",
+      "github_url": "https://github.com/golang/go/blob/master/src/runtime/HACKING.md",
+      "raw_url": "https://raw.githubusercontent.com/golang/go/master/src/runtime/HACKING.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "c8550aadead4ca128689e1439c7ee644591773bb777992c5af485ee00cf46372",
+      "text_characters": 22749
+    },
+    {
+      "repository": "golang/sync",
+      "branch": "master",
+      "path": "errgroup/errgroup.go",
+      "github_url": "https://github.com/golang/sync/blob/master/errgroup/errgroup.go",
+      "raw_url": "https://raw.githubusercontent.com/golang/sync/master/errgroup/errgroup.go",
+      "checked_date": "2026-10-23",
+      "text_sha256": "fd91297cc3313c8d965137301beb80f51707d5bc863510dcd8270570cc510b87",
+      "text_characters": 4033
+    },
+    {
+      "repository": "golang/sync",
+      "branch": "master",
+      "path": "singleflight/singleflight.go",
+      "github_url": "https://github.com/golang/sync/blob/master/singleflight/singleflight.go",
+      "raw_url": "https://raw.githubusercontent.com/golang/sync/master/singleflight/singleflight.go",
+      "checked_date": "2026-10-23",
+      "text_sha256": "3f40c5efb4aa1a42885f5de8bdf4615f69eb851c5cf5abdf86276bace4b98fc7",
+      "text_characters": 5412
+    },
+    {
+      "repository": "quii/learn-go-with-tests",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/quii/learn-go-with-tests/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/quii/learn-go-with-tests/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "70da5529482b405c911cf75c929f568b7c3771f12a3898650ffbfc04b3bba447",
+      "text_characters": 11015
+    },
+    {
+      "repository": "gobyexample-cn/gobyexample",
+      "branch": "master",
+      "path": "README.md",
+      "github_url": "https://github.com/gobyexample-cn/gobyexample/blob/master/README.md",
+      "raw_url": "https://raw.githubusercontent.com/gobyexample-cn/gobyexample/master/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "471387e10b4624fe62cb281e1e0aed8cb7602c6f8506d0b9c80dde066c86f282",
+      "text_characters": 3752
+    },
+    {
+      "repository": "gin-gonic/gin",
+      "branch": "master",
+      "path": "README.md",
+      "github_url": "https://github.com/gin-gonic/gin/blob/master/README.md",
+      "raw_url": "https://raw.githubusercontent.com/gin-gonic/gin/master/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "f8a8b236019587b81d1fc69292c146a40910c3295c3ec0ba3855910664a97738",
+      "text_characters": 11756
+    },
+    {
+      "repository": "grpc/grpc-go",
+      "branch": "master",
+      "path": "examples/helloworld/README.md",
+      "github_url": "https://github.com/grpc/grpc-go/blob/master/examples/helloworld/README.md",
+      "raw_url": "https://raw.githubusercontent.com/grpc/grpc-go/master/examples/helloworld/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "e138107afac0647e9a0572194ea19b43f19580831a2530daba1668ae43f4ab46",
+      "text_characters": 683
+    },
+    {
+      "repository": "redis/go-redis",
+      "branch": "master",
+      "path": "README.md",
+      "github_url": "https://github.com/redis/go-redis/blob/master/README.md",
+      "raw_url": "https://raw.githubusercontent.com/redis/go-redis/master/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "806aee03d9f33033585232ebf202cca8417510e28ce3fa7ca2cb3b0fb6522f98",
+      "text_characters": 41272
+    },
+    {
+      "repository": "go-sql-driver/mysql",
+      "branch": "master",
+      "path": "README.md",
+      "github_url": "https://github.com/go-sql-driver/mysql/blob/master/README.md",
+      "raw_url": "https://raw.githubusercontent.com/go-sql-driver/mysql/master/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "9489f195f4823cdd6dfb40273d3bc1540816a662dda861489ffcbbce94d797d3",
+      "text_characters": 34524
+    },
+    {
+      "repository": "segmentio/kafka-go",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/segmentio/kafka-go/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/segmentio/kafka-go/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "1cf1023086f41d24d8ffe224bca279aad6b4fa1bad64a6bd3f1dfb4cd5532930",
+      "text_characters": 23199
+    },
+    {
+      "repository": "open-telemetry/opentelemetry-go",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/open-telemetry/opentelemetry-go/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/open-telemetry/opentelemetry-go/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "23ee9c24ca4d68eec79e652b0315ae07fa562feb139a6a283b97379126e62a8b",
+      "text_characters": 5845
+    },
+    {
+      "repository": "prometheus/client_golang",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/prometheus/client_golang/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/prometheus/client_golang/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "c5cea87a902cf6b43eab90104e31d384ff608ecdaa583f7ae2e8f2cb89e6afce",
+      "text_characters": 4689
+    },
+    {
+      "repository": "kubernetes/website",
+      "branch": "main",
+      "path": "content/en/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes.md",
+      "github_url": "https://github.com/kubernetes/website/blob/main/content/en/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes.md",
+      "raw_url": "https://raw.githubusercontent.com/kubernetes/website/main/content/en/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "bf80ca8ec4ffa9c71c06a11c515dcb34f18132b4cbe52896b5acd9b5989c6c0c",
+      "text_characters": 14821
+    },
+    {
+      "repository": "Shopify/shopify-app-template-remix",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/Shopify/shopify-app-template-remix/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/Shopify/shopify-app-template-remix/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "af8dfb0f72369d98e66458f368595fb80b1a3d9ddd87838bdad92ff3185140f5",
+      "text_characters": 19623
+    },
+    {
+      "repository": "golang/website",
+      "branch": "master",
+      "path": "_content/doc/gc-guide.html",
+      "github_url": "https://github.com/golang/website/blob/master/_content/doc/gc-guide.html",
+      "raw_url": "https://raw.githubusercontent.com/golang/website/master/_content/doc/gc-guide.html",
+      "checked_date": "2026-10-23",
+      "text_sha256": "8ae1b5b7e53466aaa27ac5f2fc46f74e617362c02f6c419d352c4f7389558ba3",
+      "text_characters": 76696
+    },
+    {
+      "repository": "golang/go",
+      "branch": "master",
+      "path": "src/net/http/server.go",
+      "github_url": "https://github.com/golang/go/blob/master/src/net/http/server.go",
+      "raw_url": "https://raw.githubusercontent.com/golang/go/master/src/net/http/server.go",
+      "checked_date": "2026-10-23",
+      "text_sha256": "b5aa54a2ddb0071e15b67a93705df6638f2432e377f7ebc9c2f2e159e877fa09",
+      "text_characters": 146547
+    },
+    {
+      "repository": "golang/go",
+      "branch": "master",
+      "path": "src/database/sql/example_test.go",
+      "github_url": "https://github.com/golang/go/blob/master/src/database/sql/example_test.go",
+      "raw_url": "https://raw.githubusercontent.com/golang/go/master/src/database/sql/example_test.go",
+      "checked_date": "2026-10-23",
+      "text_sha256": "58c990fb1e2977d299a679a3c572dad7e2ae8716b0ba92ab612d5c07cbf1edd3",
+      "text_characters": 8678
+    },
+    {
+      "repository": "quii/learn-go-with-tests",
+      "branch": "main",
+      "path": "concurrency.md",
+      "github_url": "https://github.com/quii/learn-go-with-tests/blob/main/concurrency.md",
+      "raw_url": "https://raw.githubusercontent.com/quii/learn-go-with-tests/main/concurrency.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "e3e05820af3b9ae823ebaabd3b5e9f3199924c592bdc3eb89e742946170c0aae",
+      "text_characters": 18334
+    },
+    {
+      "repository": "quii/learn-go-with-tests",
+      "branch": "main",
+      "path": "context.md",
+      "github_url": "https://github.com/quii/learn-go-with-tests/blob/main/context.md",
+      "raw_url": "https://raw.githubusercontent.com/quii/learn-go-with-tests/main/context.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "a5d3c8e13b6b64e7a63e599a93fcd58cfe4c9172476df4c8b05f761cd39984cf",
+      "text_characters": 16852
+    },
+    {
+      "repository": "grpc/grpc-go",
+      "branch": "master",
+      "path": "examples/helloworld/greeter_client/main.go",
+      "github_url": "https://github.com/grpc/grpc-go/blob/master/examples/helloworld/greeter_client/main.go",
+      "raw_url": "https://raw.githubusercontent.com/grpc/grpc-go/master/examples/helloworld/greeter_client/main.go",
+      "checked_date": "2026-10-23",
+      "text_sha256": "5539f38f560ab26ce11514cd81f941fb80f4ca9a88754aaaf40d89bbc92e3e30",
+      "text_characters": 1610
+    },
+    {
+      "repository": "Shopify/shopify-app-template-react-router",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/Shopify/shopify-app-template-react-router/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/Shopify/shopify-app-template-react-router/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "dd12ccf187c873960e9ec3a5eaa33c3844fe1088adb48693e81528823a1a5bb8",
+      "text_characters": 13424
+    },
+    {
+      "repository": "Shopify/shopify-app-template-react-router",
+      "branch": "main",
+      "path": "app/routes/webhooks.app.uninstalled.tsx",
+      "github_url": "https://github.com/Shopify/shopify-app-template-react-router/blob/main/app/routes/webhooks.app.uninstalled.tsx",
+      "raw_url": "https://raw.githubusercontent.com/Shopify/shopify-app-template-react-router/main/app/routes/webhooks.app.uninstalled.tsx",
+      "checked_date": "2026-10-23",
+      "text_sha256": "a8fcc10c12c04d3c38a1736f4c87f8b7e3adedc0c25a9b4d0343395d37d25117",
+      "text_characters": 615
+    }
+  ]
+}

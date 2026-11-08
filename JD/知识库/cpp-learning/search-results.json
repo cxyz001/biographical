@@ -1,0 +1,52 @@
+[
+  {
+    "query": "modern cpp tutorial",
+    "url": "https://api.github.com/search/repositories?q=modern%20cpp%20tutorial&sort=stars&per_page=4",
+    "repositories": [
+      "changkun/modern-cpp-tutorial",
+      "mcpp-community/d2mcpp",
+      "Mq-b/Modern-Cpp-templates-tutorial",
+      "Mq-b/ModernCpp-ConcurrentProgramming-Tutorial"
+    ]
+  },
+  {
+    "query": "cpp core guidelines",
+    "url": "https://api.github.com/search/repositories?q=cpp%20core%20guidelines&sort=stars&per_page=4",
+    "repositories": [
+      "isocpp/CppCoreGuidelines",
+      "lynnboy/CppCoreGuidelines-zh-CN",
+      "CppKorea/CppCoreGuidelines",
+      "ufoym/cpp-core-guidelines-cheatsheet"
+    ]
+  },
+  {
+    "query": "asio networking cpp",
+    "url": "https://api.github.com/search/repositories?q=asio%20networking%20cpp&sort=stars&per_page=4",
+    "repositories": [
+      "mkckr0/audio-share",
+      "mmoaay/boost-asio-cpp-network-programming-in-chinese",
+      "JLospinoso/abrade",
+      "Belgorodsky/BoostAsioCppNetworkProgrammingCookbookDmitroRadchuk"
+    ]
+  },
+  {
+    "query": "qt serialport",
+    "url": "https://api.github.com/search/repositories?q=qt%20serialport&sort=stars&per_page=4",
+    "repositories": [
+      "wh201906/SerialTest",
+      "hyOzd/serialplot",
+      "x-tools-author/x-tools",
+      "skiars/SerialTool"
+    ]
+  },
+  {
+    "query": "libmodbus",
+    "url": "https://api.github.com/search/repositories?q=libmodbus&sort=stars&per_page=4",
+    "repositories": [
+      "stephane/libmodbus",
+      "zszszszsz/.config",
+      "kochedykov/jlibmodbus",
+      "epsilonrt/libmodbuspp"
+    ]
+  }
+]

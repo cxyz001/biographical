@@ -1,0 +1,68 @@
+[
+  {
+    "query": "embedded linux training bootlin",
+    "url": "https://api.github.com/search/repositories?q=embedded%20linux%20training%20bootlin&sort=stars&per_page=4",
+    "checked_date": "2026-10-23",
+    "repositories": [
+      "bootlin/training-materials",
+      "retpolanne/embedded-linux-training",
+      "yasminebgh/bootlin-embedded-training",
+      "tchomphoochan/embedded-linux-bbb-labs"
+    ]
+  },
+  {
+    "query": "buildroot embedded linux",
+    "url": "https://api.github.com/search/repositories?q=buildroot%20embedded%20linux&sort=stars&per_page=4",
+    "checked_date": "2026-10-23",
+    "repositories": [
+      "buildroot/buildroot",
+      "FunKey-Project/FunKey-OS",
+      "100askTeam/xiaozhi-linux",
+      "PacktPublishing/Mastering-Embedded-Linux-Programming-Second-Edition"
+    ]
+  },
+  {
+    "query": "linux device driver tutorial",
+    "url": "https://api.github.com/search/repositories?q=linux%20device%20driver%20tutorial&sort=stars&per_page=4",
+    "checked_date": "2026-10-23",
+    "repositories": [
+      "chrisneagu/FTC-Skystone-Dark-Angels-Romania-2020",
+      "VictorRodriguez/linux_device_drivers_tutorial",
+      "rprata/linux-device-driver-tutorial",
+      "alero-awani/linux-kernel-programming"
+    ]
+  },
+  {
+    "query": "openamp rpmsg",
+    "url": "https://api.github.com/search/repositories?q=openamp%20rpmsg&sort=stars&per_page=4",
+    "checked_date": "2026-10-23",
+    "repositories": [
+      "OpenAMP/open-amp",
+      "dimtass/stm32mp1-rpmsg-adcsampler",
+      "Lawrence-Leung/PhytiumFlyers",
+      "dimtass/stm32mp1-rpmsg-test"
+    ]
+  },
+  {
+    "query": "rknn model zoo",
+    "url": "https://api.github.com/search/repositories?q=rknn%20model%20zoo&sort=stars&per_page=4",
+    "checked_date": "2026-10-23",
+    "repositories": [
+      "airockchip/rknn_model_zoo",
+      "airockchip/rknn3-model-zoo",
+      "Mactarvish/rknn_model_zoo",
+      "trgue/Qt_YOLOv5_RTSP_RK3566"
+    ]
+  },
+  {
+    "query": "rauc ota",
+    "url": "https://api.github.com/search/repositories?q=rauc%20ota&sort=stars&per_page=4",
+    "checked_date": "2026-10-23",
+    "repositories": [
+      "rauc/rauc",
+      "rauc/meta-rauc",
+      "rauc/rauc-hawkbit-updater",
+      "UpstreamDataInc/goosebit"
+    ]
+  }
+]

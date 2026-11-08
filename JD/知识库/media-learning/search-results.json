@@ -1,0 +1,97 @@
+[
+  {
+    "query": "ffmpeg remux examples",
+    "results": [
+      {
+        "repository": "leixiaohua1020/simplest_ffmpeg_format",
+        "url": "https://github.com/leixiaohua1020/simplest_ffmpeg_format",
+        "description": "FFmpeg's mux/demux/remux examples"
+      },
+      {
+        "repository": "stoyan-scava/ffmpeg-examples",
+        "url": "https://github.com/stoyan-scava/ffmpeg-examples",
+        "description": "Examples of audio and video remux with ffmpeg cli"
+      }
+    ]
+  },
+  {
+    "query": "webrtc samples",
+    "results": [
+      {
+        "repository": "webrtc/samples",
+        "url": "https://github.com/webrtc/samples",
+        "description": "WebRTC Web demos and samples"
+      },
+      {
+        "repository": "microsoft/WebRTC-universal-samples",
+        "url": "https://github.com/microsoft/WebRTC-universal-samples",
+        "description": "WebRTC samples for the Universal Windows Platform."
+      },
+      {
+        "repository": "opentok/opentok-web-samples",
+        "url": "https://github.com/opentok/opentok-web-samples",
+        "description": "Sample applications for using OpenTok.js"
+      }
+    ]
+  },
+  {
+    "query": "rtsp streaming server",
+    "results": [
+      {
+        "repository": "mutaphore/RTSP-Client-Server",
+        "url": "https://github.com/mutaphore/RTSP-Client-Server",
+        "description": "Implementation of a streaming video server and client that communicate using the Real-Time Streaming Protocol (RTSP) and send data using the Realtime Transfer Protocol (RTP)"
+      },
+      {
+        "repository": "revmischa/rtsp-server",
+        "url": "https://github.com/revmischa/rtsp-server",
+        "description": "Lightweight RTSP/RTP streaming media server"
+      },
+      {
+        "repository": "EasyDarwin/EasyDarwin",
+        "url": "https://github.com/EasyDarwin/EasyDarwin",
+        "description": "open source、high performance、industrial rtsp streaming server,a lot of optimization on streaming relay,KeyFrame cache,RESTful,and web management,also EasyDarwin support distributed load balancing,a simple streaming media cloud platform architecture."
+      }
+    ]
+  },
+  {
+    "query": "GB28181 wvp",
+    "results": [
+      {
+        "repository": "648540858/wvp-GB28181-pro",
+        "url": "https://github.com/648540858/wvp-GB28181-pro",
+        "description": "基于GB28181-2016、部标808、部标1078标准实现的开箱即用的网络视频平台。自带管理页面，支持NAT穿透，支持海康、大华、宇视等品牌的IPC、NVR接入。支持国标级联，支持将普通摄像机/直播流/直播推流转国标共享到国标平台。"
+      },
+      {
+        "repository": "urmyfaith/wvp",
+        "url": "https://github.com/urmyfaith/wvp",
+        "description": "WEB VIDEO PLATFORM是一个基于GB28181-2016标准实现的网络视频平台，目前只实现了核心信令部分，支持海康、大华、宇视等品牌的IPC、NVR、DVR接入。"
+      },
+      {
+        "repository": "gowvp/owl",
+        "url": "https://github.com/gowvp/owl",
+        "description": "GB28181 - 2022 NVR | ONVIF/RTMP/RTSP | ZLMediaKit | 本地 YOLO 检测 | 私有部署"
+      }
+    ]
+  },
+  {
+    "query": "streaming speech recognition sherpa",
+    "results": [
+      {
+        "repository": "aivo0/rust-asr-server",
+        "url": "https://github.com/aivo0/rust-asr-server",
+        "description": "High-performance WebSocket streaming ASR server in Rust. Supports sherpa-onnx, FastConformer, and Parakeet models for real-time speech recognition."
+      },
+      {
+        "repository": "Sauronwu/sherpa4pi",
+        "url": "https://github.com/Sauronwu/sherpa4pi",
+        "description": "Raspberry Pi ARM64 package and guide for offline Chinese streaming speech recognition with sherpa-onnx."
+      },
+      {
+        "repository": "mbykov/bhl-vosk-sherpa-go",
+        "url": "https://github.com/mbykov/bhl-vosk-sherpa-go",
+        "description": "Streaming speech recognition module for Go based on sherpa-onnx and Vosk model."
+      }
+    ]
+  }
+]

@@ -1,0 +1,154 @@
+[
+  {
+    "repository": "FFmpeg/FFmpeg",
+    "branch": "master",
+    "path": "doc/examples/remux.c",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/FFmpeg/FFmpeg/blob/master/doc/examples/remux.c",
+    "text_sha256": "50400642ae3147b563d186ec335bb7a94939e715ab6fd722dfb9c05632d7af55",
+    "text_characters": 6576
+  },
+  {
+    "repository": "FFmpeg/FFmpeg",
+    "branch": "master",
+    "path": "doc/examples/decode_video.c",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/FFmpeg/FFmpeg/blob/master/doc/examples/decode_video.c",
+    "text_sha256": "e4b4cd6a3750a6dbb6d1fffcc15acf9f6ffc4ea6852e18cb2cd62eada4138f78",
+    "text_characters": 5652
+  },
+  {
+    "repository": "FFmpeg/FFmpeg",
+    "branch": "master",
+    "path": "doc/muxers.texi",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/FFmpeg/FFmpeg/blob/master/doc/muxers.texi",
+    "text_sha256": "501537f0aad035009778a8ce5097410e3697051e87943ccd591be744619762d9",
+    "text_characters": 149402
+  },
+  {
+    "repository": "GStreamer/gst-docs",
+    "branch": "master",
+    "path": "markdown/tutorials/basic/hello-world.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/GStreamer/gst-docs/blob/master/markdown/tutorials/basic/hello-world.md",
+    "text_sha256": "d62bd93f0376b7a6f8e34dcd2b33469e771caa094b947b0ab0baefd28cfa131c",
+    "text_characters": 9895
+  },
+  {
+    "repository": "ossrs/srs",
+    "branch": "develop",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/ossrs/srs/blob/develop/README.md",
+    "text_sha256": "d76cb5d1074bafd08e70fda91d8dbec1e963c72fc31edee4b292f6983cd94e1b",
+    "text_characters": 14495
+  },
+  {
+    "repository": "ZLMediaKit/ZLMediaKit",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/ZLMediaKit/ZLMediaKit/blob/master/README.md",
+    "text_sha256": "52d659c9883e412389b48ca8d67d4c32d68a67c35862b3de96cfe78e3964003a",
+    "text_characters": 17777
+  },
+  {
+    "repository": "bluenviron/mediamtx",
+    "branch": "main",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/bluenviron/mediamtx/blob/main/README.md",
+    "text_sha256": "e033ed35375b20c5af27124047b1d4e5baa2537f54499eed73faa939d364688f",
+    "text_characters": 3500
+  },
+  {
+    "repository": "video-dev/hls.js",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/video-dev/hls.js/blob/master/README.md",
+    "text_sha256": "32bdcf820f23cf6b95ac300947cc0fe0eeef48bc7620ffa161705ee9fe88489d",
+    "text_characters": 34367
+  },
+  {
+    "repository": "webrtc/samples",
+    "branch": "gh-pages",
+    "path": "src/content/peerconnection/pc1/js/main.js",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/webrtc/samples/blob/gh-pages/src/content/peerconnection/pc1/js/main.js",
+    "text_sha256": "16c317a0d5ba5a5224e4644ec3cab7de84231859305a8ad568f04d36f29d6603",
+    "text_characters": 6457
+  },
+  {
+    "repository": "pion/webrtc",
+    "branch": "master",
+    "path": "examples/README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/pion/webrtc/blob/master/examples/README.md",
+    "text_sha256": "7dc22897593208b76034192c32dc1e01b16a66dc897d0fbb959cc1d820ad8e6c",
+    "text_characters": 6241
+  },
+  {
+    "repository": "coturn/coturn",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/coturn/coturn/blob/master/README.md",
+    "text_sha256": "376359ad49b419f9792a6000c25373f6440d7964950d3c88b318a7cf1a4c2da3",
+    "text_characters": 9570
+  },
+  {
+    "repository": "WVP-GB28181/wvp-GB28181-pro",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/WVP-GB28181/wvp-GB28181-pro/blob/master/README.md",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repository": "FFmpeg/FFmpeg",
+    "branch": "master",
+    "path": "doc/indevs.texi",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/FFmpeg/FFmpeg/blob/master/doc/indevs.texi",
+    "text_sha256": "1aab3d87037cf06d4052a47c808976d1b4296921a450501e2b5ebd238e821b59",
+    "text_characters": 50466
+  },
+  {
+    "repository": "ggerganov/whisper.cpp",
+    "branch": "master",
+    "path": "examples/stream/README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/ggerganov/whisper.cpp/blob/master/examples/stream/README.md",
+    "text_sha256": "b12c8cb943eb9f01476e594bca605effc19936ba30224a63ab683c3e87ea838d",
+    "text_characters": 2857
+  },
+  {
+    "repository": "k2-fsa/sherpa-onnx",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/k2-fsa/sherpa-onnx/blob/master/README.md",
+    "text_sha256": "e9e425854ec9c1c5f8d18cbc041e2590a6e875ec69b90951f95e4d3cfdfa1ed5",
+    "text_characters": 57542
+  },
+  {
+    "repository": "aiortc/aiortc",
+    "branch": "main",
+    "path": "examples/server/README.rst",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/aiortc/aiortc/blob/main/examples/server/README.rst",
+    "text_sha256": "00b7051e5223fa87aa7f5f77804b318f787ebdb6a401bc7c0b7873dae47712e4",
+    "text_characters": 1334
+  },
+  {
+    "repository": "648540858/wvp-GB28181-pro",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/648540858/wvp-GB28181-pro/blob/master/README.md",
+    "text_sha256": "852b7709e006e7fbd4d6685f308ec4024fad21c296f90c49dd84f04e930fb95f",
+    "text_characters": 7463
+  }
+]

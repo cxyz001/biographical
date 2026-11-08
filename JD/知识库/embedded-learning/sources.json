@@ -1,0 +1,232 @@
+[
+  {
+    "repository": "bootlin/training-materials",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/bootlin/training-materials/blob/master/README.md",
+    "text_sha256": "b499b6cbc6098f7eaec9b169fa04f15379e87cf406b3661d4eed0eb600f29bc2",
+    "text_characters": 8863
+  },
+  {
+    "repository": "buildroot/buildroot",
+    "branch": "master",
+    "path": "docs/manual/quickstart.adoc",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/buildroot/buildroot/blob/master/docs/manual/quickstart.adoc",
+    "text_sha256": "0a7da530cea1a359835c96e2964bd3136e767d0a2d3d662831d13993163f2adb",
+    "text_characters": 4809
+  },
+  {
+    "repository": "yoctoproject/poky",
+    "branch": "master",
+    "path": "README.poky.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/yoctoproject/poky/blob/master/README.poky.md",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repository": "u-boot/u-boot",
+    "branch": "master",
+    "path": "doc/board/emulation/qemu-arm.rst",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/u-boot/u-boot/blob/master/doc/board/emulation/qemu-arm.rst",
+    "text_sha256": "2ca2209364a0e385aae7681c2088b3363eed3406b2eed807596268d5f5463846",
+    "text_characters": 8912
+  },
+  {
+    "repository": "torvalds/linux",
+    "branch": "master",
+    "path": "Documentation/i2c/dev-interface.rst",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/torvalds/linux/blob/master/Documentation/i2c/dev-interface.rst",
+    "text_characters": 8986,
+    "text_sha256": "5aba0e15109ddb47056a4f7bb50d4465e2ff2a4af5cc7aa837aa0130e0876aad"
+  },
+  {
+    "repository": "torvalds/linux",
+    "branch": "master",
+    "path": "Documentation/driver-api/driver-model/overview.rst",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/torvalds/linux/blob/master/Documentation/driver-api/driver-model/overview.rst",
+    "text_characters": 4838,
+    "text_sha256": "45373730a912d6c96575418491142785e4d96d53c75fcb4357d57636921443a4"
+  },
+  {
+    "repository": "torvalds/linux",
+    "branch": "master",
+    "path": "Documentation/devicetree/usage-model.rst",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/torvalds/linux/blob/master/Documentation/devicetree/usage-model.rst",
+    "text_characters": 19351,
+    "text_sha256": "8d5bc501946b165b6b5f8ccc4cdfa4a36e4272188168165fbc09dc1c5ea1372b"
+  },
+  {
+    "repository": "torvalds/linux",
+    "branch": "master",
+    "path": "Documentation/core-api/dma-api-howto.rst",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/torvalds/linux/blob/master/Documentation/core-api/dma-api-howto.rst",
+    "text_sha256": "92070ca3b5e150580c26d39be990b109053951a767fb3fd1d695aece478bbff2",
+    "text_characters": 35316
+  },
+  {
+    "repository": "torvalds/linux",
+    "branch": "master",
+    "path": "Documentation/rpmsg.rst",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/torvalds/linux/blob/master/Documentation/rpmsg.rst",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repository": "FreeRTOS/FreeRTOS-Kernel",
+    "branch": "main",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/FreeRTOS/FreeRTOS-Kernel/blob/main/README.md",
+    "text_sha256": "343f07facc543d2547fe3fc12ea7f63397ed0be7f3e30c0cf70a2b3a7cdd13d2",
+    "text_characters": 7545
+  },
+  {
+    "repository": "OpenAMP/open-amp",
+    "branch": "main",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/OpenAMP/open-amp/blob/main/README.md",
+    "text_sha256": "856549c5dea12a09edd9b81acd6f1509331c4a7f8f06aa60676cf18f6a73ced3",
+    "text_characters": 9058
+  },
+  {
+    "repository": "zephyrproject-rtos/zephyr",
+    "branch": "main",
+    "path": "samples/subsys/ipc/openamp/README.rst",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/zephyrproject-rtos/zephyr/blob/main/samples/subsys/ipc/openamp/README.rst",
+    "text_sha256": "c225d43df26fc4f6f2c81749637cf7d83f2b4eda7305d88181418f19d35c54be",
+    "text_characters": 4388
+  },
+  {
+    "repository": "linux-can/can-utils",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/linux-can/can-utils/blob/master/README.md",
+    "text_sha256": "967a82ae9184d36a90ea4c13de6cdc887c9b70c323406f600a68c22eeb77ffec",
+    "text_characters": 4283
+  },
+  {
+    "repository": "eclipse-mosquitto/mosquitto",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/eclipse-mosquitto/mosquitto/blob/master/README.md",
+    "text_sha256": "a214fc32f8d23e629bb6175677d97d9fdd681a9f0fc373abd39c3024204b6b71",
+    "text_characters": 5319
+  },
+  {
+    "repository": "eclipse-paho/paho.mqtt.c",
+    "branch": "master",
+    "path": "src/samples/MQTTClient_publish.c",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/eclipse-paho/paho.mqtt.c/blob/master/src/samples/MQTTClient_publish.c",
+    "text_sha256": "6821decedf64c0502db5fc6bdc2ab816de329cb6a8c598004956f47f3d1ab10f",
+    "text_characters": 2649
+  },
+  {
+    "repository": "rauc/rauc",
+    "branch": "master",
+    "path": "docs/basic.rst",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/rauc/rauc/blob/master/docs/basic.rst",
+    "text_sha256": "6ed9ddd22da0a4d50e156637e1ad5f801ac1664267996b3145bee28afabd9ca0",
+    "text_characters": 15271
+  },
+  {
+    "repository": "sbabic/swupdate",
+    "branch": "master",
+    "path": "doc/source/swupdate.rst",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/sbabic/swupdate/blob/master/doc/source/swupdate.rst",
+    "text_sha256": "66b9698da314a9504bef3e95ace1c4207a937069caf4cfee12434e0eef91b277",
+    "text_characters": 43968
+  },
+  {
+    "repository": "rockchip-linux/rknn-toolkit2",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/rockchip-linux/rknn-toolkit2/blob/master/README.md",
+    "text_sha256": "0e2eb425013136a29e6bddac21232fbf1f18f2b94704ce49803fbde6382c4cf7",
+    "text_characters": 3701
+  },
+  {
+    "repository": "airockchip/rknn_model_zoo",
+    "branch": "main",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/airockchip/rknn_model_zoo/blob/main/README.md",
+    "text_sha256": "1f0081537ce2526472421440bb909026c41e0539125796b6d6e9345df10d8d8a",
+    "text_characters": 30499
+  },
+  {
+    "repository": "microsoft/onnxruntime",
+    "branch": "main",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/microsoft/onnxruntime/blob/main/README.md",
+    "text_characters": 3087,
+    "text_sha256": "d9de78283cf00a77f907f2183fb8df1dda8706b79e4ab3517f2a06c6de0c6a4c"
+  },
+  {
+    "repository": "k3s-io/k3s",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/k3s-io/k3s/blob/master/README.md",
+    "text_sha256": "975ad1416e11b9b0b27bc48766f749ae9518a179a78b50b6a1e9039e735f8441",
+    "text_characters": 10804
+  },
+  {
+    "repository": "systemd/systemd",
+    "branch": "main",
+    "path": "man/systemd.service.xml",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/systemd/systemd/blob/main/man/systemd.service.xml",
+    "text_sha256": "97646bea7b1452f89c8e70d85cc4e1e2c857d430e9200808d78e91a45dd4ff0b",
+    "text_characters": 121199
+  },
+  {
+    "repository": "tpm2-software/tpm2-tools",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/tpm2-software/tpm2-tools/blob/master/README.md",
+    "text_sha256": "5ad0717dd9ec5fcaed4e0ded0f492d4185fe2061c06ed7722974d08d7c0fd8aa",
+    "text_characters": 674
+  },
+  {
+    "repository": "yoctoproject/yocto-docs",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/yoctoproject/yocto-docs/blob/master/README.md",
+    "error": "HTTP Error 404: Not Found"
+  },
+  {
+    "repository": "airockchip/rknn-toolkit2",
+    "branch": "master",
+    "path": "README.md",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/airockchip/rknn-toolkit2/blob/master/README.md",
+    "text_characters": 4120,
+    "text_sha256": "d7d8f2c3b66919ef2970db6404e28eee28be56b71061374978a2edc33f55a860"
+  },
+  {
+    "repository": "bootlin/training-materials",
+    "branch": "master",
+    "path": "labs/sysdev-bootloader-u-boot/sysdev-bootloader-u-boot.tex",
+    "checked_date": "2026-10-23",
+    "github_url": "https://github.com/bootlin/training-materials/blob/master/labs/sysdev-bootloader-u-boot/sysdev-bootloader-u-boot.tex",
+    "error": "HTTP Error 404: Not Found"
+  }
+]

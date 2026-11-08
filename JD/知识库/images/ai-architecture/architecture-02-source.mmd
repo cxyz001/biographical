@@ -1,0 +1,29 @@
+graph LR
+    PY["Python"] --> FASTAPI["FastAPI / Flask<br/>服务封装"]
+    PY --> LC["LangChain / LlamaIndex<br/>编排框架"]
+    PY --> PANDAS["Pandas / NumPy<br/>数据处理"]
+    PY --> SDK["模型 SDK<br/>OpenAI / 通义 / DeepSeek"]
+
+    LC --> RAG["RAG 检索链路"]
+    LC --> AGENT["Agent 工具调用"]
+    LC --> MEM["记忆管理"]
+
+    RAG --> VDB["向量库<br/>Milvus / PGVector"]
+    RAG --> EMBM["Embedding 模型"]
+    RAG --> RR["重排序模型"]
+
+    AGENT --> FUNC["业务 API 集成"]
+    AGENT --> SANDBOX["代码沙箱执行"]
+    AGENT --> MCP["MCP 工具协议"]
+
+    FASTAPI --> STREAM["SSE / WebSocket 流式输出"]
+    STREAM --> FE["前端打字机效果"]
+
+    VDB --> OPS["Docker 私有化部署"]
+    LOCAL["本地模型<br/>vLLM / llama.cpp"] --> OPS
+    OPS --> K8S["Kubernetes / GPU 调度"]
+    K8S --> MON["Prometheus / Grafana 监控"]
+
+    JAVASVC["Java/Go 业务系统"] -.HTTP 或 MQ.-> FASTAPI
+    CACHE["Redis"] --> SESS["会话缓存"]
+    CACHE --> RESULT["结果去重缓存"]

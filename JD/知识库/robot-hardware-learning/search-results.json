@@ -1,0 +1,49 @@
+[
+  {
+    "query": "ros2 control navigation",
+    "results": [
+      {
+        "repository": "mikeferguson/graceful_controller",
+        "url": "https://github.com/mikeferguson/graceful_controller"
+      },
+      {
+        "repository": "PegasusResearch/pegasus",
+        "url": "https://github.com/PegasusResearch/pegasus"
+      }
+    ]
+  },
+  {
+    "query": "robot trajectory ruckig",
+    "results": [
+      {
+        "repository": "rfedsc/MPC_IBVS_with_Ruckig_and_Fuzzy_Velocity_Controller",
+        "url": "https://github.com/rfedsc/MPC_IBVS_with_Ruckig_and_Fuzzy_Velocity_Controller"
+      }
+    ]
+  },
+  {
+    "query": "kicad hardware design",
+    "error": "HTTP Error 403: rate limit exceeded"
+  },
+  {
+    "query": "EV charging EVerest",
+    "error": "HTTP Error 403: rate limit exceeded"
+  },
+  {
+    "query": "ocpp charge point",
+    "error": "HTTP Error 403: rate limit exceeded"
+  },
+  {
+    "query": "pyvisa instruments",
+    "results": [
+      {
+        "repository": "pyvisa/pyvisa",
+        "url": "https://github.com/pyvisa/pyvisa"
+      },
+      {
+        "repository": "microsoft/pyvisa-mock",
+        "url": "https://github.com/microsoft/pyvisa-mock"
+      }
+    ]
+  }
+]

@@ -1,0 +1,164 @@
+[
+  {
+    "repository": "isocpp/CppCoreGuidelines",
+    "branch": "master",
+    "path": "CppCoreGuidelines.md",
+    "github_url": "https://github.com/isocpp/CppCoreGuidelines/blob/master/CppCoreGuidelines.md",
+    "checked_date": "2026-10-23",
+    "text_sha256": "27b53e7de83994ffe5c4e4c302a97a2fe83e48eccc7b09a0d734906609079ca7",
+    "text_characters": 841383
+  },
+  {
+    "repository": "changkun/modern-cpp-tutorial",
+    "branch": "master",
+    "path": "book/zh-cn/03-runtime.md",
+    "github_url": "https://github.com/changkun/modern-cpp-tutorial/blob/master/book/zh-cn/03-runtime.md",
+    "checked_date": "2026-10-23",
+    "text_sha256": "dcbdabc692854b46d4f5f18940e01d447b3a7c1c4a3f467362631453de06b93e",
+    "text_characters": 14835
+  },
+  {
+    "repository": "AnthonyCalandra/modern-cpp-features",
+    "branch": "master",
+    "path": "CPP17.md",
+    "github_url": "https://github.com/AnthonyCalandra/modern-cpp-features/blob/master/CPP17.md",
+    "checked_date": "2026-10-23",
+    "text_sha256": "529989ce7a7bf86ab02cda75260e49dabf1ced37a247ffde449574cdc022339c",
+    "text_characters": 24700
+  },
+  {
+    "repository": "Kitware/CMake",
+    "branch": "master",
+    "path": "Help/guide/tutorial/index.rst",
+    "github_url": "https://github.com/Kitware/CMake/blob/master/Help/guide/tutorial/index.rst",
+    "checked_date": "2026-10-23",
+    "text_sha256": "a1853c6b49851b66382beee9c786431fdf304c9465d88de0767606283503569a",
+    "text_characters": 1518
+  },
+  {
+    "repository": "google/googletest",
+    "branch": "main",
+    "path": "docs/primer.md",
+    "github_url": "https://github.com/google/googletest/blob/main/docs/primer.md",
+    "checked_date": "2026-10-23",
+    "text_sha256": "03d756ab11521933cb59ef9bc081e7524e79c2dfbea496f6583ec166f819c26e",
+    "text_characters": 19101
+  },
+  {
+    "repository": "chriskohlhoff/asio",
+    "branch": "master",
+    "path": "src/examples/cpp11/echo/async_tcp_echo_server.cpp",
+    "github_url": "https://github.com/chriskohlhoff/asio/blob/master/src/examples/cpp11/echo/async_tcp_echo_server.cpp",
+    "checked_date": "2026-10-23",
+    "text_characters": 2099,
+    "text_sha256": "2cd48d56e350185619aa3ed632d2bbf7eea38c5193efce0a735c5217e8bc0150"
+  },
+  {
+    "repository": "qt/qtbase",
+    "branch": "dev",
+    "path": "src/corelib/thread/qthread.cpp",
+    "github_url": "https://github.com/qt/qtbase/blob/dev/src/corelib/thread/qthread.cpp",
+    "checked_date": "2026-10-23",
+    "text_characters": 43623,
+    "text_sha256": "d510461d0871752f5be046ea06eae1c1b222ee44290461db890810b7bf2b3f28"
+  },
+  {
+    "repository": "qt/qtserialport",
+    "branch": "dev",
+    "path": "examples/serialport/terminal/mainwindow.cpp",
+    "github_url": "https://github.com/qt/qtserialport/blob/dev/examples/serialport/terminal/mainwindow.cpp",
+    "checked_date": "2026-10-23",
+    "text_sha256": "8323dd9d2b2cfd5d622d5057fc3aafb615c81df7eaffe1cb65a8346c17ebaa51",
+    "text_characters": 5481
+  },
+  {
+    "repository": "stephane/libmodbus",
+    "branch": "master",
+    "path": "tests/unit-test-client.c",
+    "github_url": "https://github.com/stephane/libmodbus/blob/master/tests/unit-test-client.c",
+    "checked_date": "2026-10-23",
+    "text_sha256": "cf270d759ec8ff25f7a8956c8f0d30456d47396c4b76f4daa13bfc67cf70cde6",
+    "text_characters": 40728
+  },
+  {
+    "repository": "linux-can/can-utils",
+    "branch": "master",
+    "path": "README.md",
+    "github_url": "https://github.com/linux-can/can-utils/blob/master/README.md",
+    "checked_date": "2026-10-23",
+    "text_sha256": "967a82ae9184d36a90ea4c13de6cdc887c9b70c323406f600a68c22eeb77ffec",
+    "text_characters": 4283
+  },
+  {
+    "repository": "eclipse-paho/paho.mqtt.cpp",
+    "branch": "master",
+    "path": "README.md",
+    "github_url": "https://github.com/eclipse-paho/paho.mqtt.cpp/blob/master/README.md",
+    "checked_date": "2026-10-23",
+    "text_sha256": "234c910adf8c08ae3604a211e3fd1173bdbb66c3c64f97f78d02f6a98b920597",
+    "text_characters": 17344
+  },
+  {
+    "repository": "gabime/spdlog",
+    "branch": "v1.x",
+    "path": "README.md",
+    "github_url": "https://github.com/gabime/spdlog/blob/v1.x/README.md",
+    "checked_date": "2026-10-23",
+    "text_sha256": "d6ea8fd52d4e3194edf0b1cead3f55e9cd75130a192d52e9cd9aae87c1aa5254",
+    "text_characters": 19411
+  },
+  {
+    "repository": "google/benchmark",
+    "branch": "main",
+    "path": "docs/user_guide.md",
+    "github_url": "https://github.com/google/benchmark/blob/main/docs/user_guide.md",
+    "checked_date": "2026-10-23",
+    "text_sha256": "7fa5caecc77823d4914ea27f2f2729ecde2d884f248af58f73c077fd5b77c910",
+    "text_characters": 62571
+  },
+  {
+    "repository": "opencv/opencv",
+    "branch": "4.x",
+    "path": "samples/cpp/videocapture_basic.cpp",
+    "github_url": "https://github.com/opencv/opencv/blob/4.x/samples/cpp/videocapture_basic.cpp",
+    "checked_date": "2026-10-23",
+    "text_characters": 1502,
+    "text_sha256": "7c3b19d8c9162c879c4ed1957100b7ae8326c370f65002a6ef23490797f4289e"
+  },
+  {
+    "repository": "FFmpeg/FFmpeg",
+    "branch": "master",
+    "path": "doc/examples/decode_video.c",
+    "github_url": "https://github.com/FFmpeg/FFmpeg/blob/master/doc/examples/decode_video.c",
+    "checked_date": "2026-10-23",
+    "text_sha256": "e4b4cd6a3750a6dbb6d1fffcc15acf9f6ffc4ea6852e18cb2cd62eada4138f78",
+    "text_characters": 5652
+  },
+  {
+    "repository": "wolfpld/tracy",
+    "branch": "master",
+    "path": "README.md",
+    "github_url": "https://github.com/wolfpld/tracy/blob/master/README.md",
+    "checked_date": "2026-10-23",
+    "text_sha256": "14783abadc1fe6248744cd3bd3a6bf96adb3ca3cf7171886c03df2d5511e2bfc",
+    "text_characters": 1988
+  },
+  {
+    "repository": "microsoft/vcpkg",
+    "branch": "master",
+    "path": "README.md",
+    "github_url": "https://github.com/microsoft/vcpkg/blob/master/README.md",
+    "checked_date": "2026-10-23",
+    "text_sha256": "7b449beaf0f8b3bbfd40e70cf40d1c8065e4fcd390be39da3e429af4b632748d",
+    "text_characters": 6989
+  },
+  {
+    "repository": "catchorg/Catch2",
+    "branch": "devel",
+    "path": "docs/tutorial.md",
+    "github_url": "https://github.com/catchorg/Catch2/blob/devel/docs/tutorial.md",
+    "checked_date": "2026-10-23",
+    "text_sha256": "1d2c10225d19b9c734e4f615fc85054cb264c49e464118e0395e90aa48c2441b",
+    "text_characters": 8461
+  }
+]

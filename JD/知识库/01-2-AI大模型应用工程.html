@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 大模型零基础教程 · 从聊天到 Agent</title>
+<style>
+*{box-sizing:border-box}body{margin:0;color:#202a27;background:#fff;font:16px/1.85 system-ui,"Microsoft YaHei",sans-serif;letter-spacing:0}
+header{border-bottom:1px solid #d9e2dd;padding:12px 24px;display:flex;gap:16px;align-items:center;flex-wrap:wrap;background:#f4f8f5}
+header strong{color:#166047}a{color:#146a50;text-underline-offset:3px}main{max-width:980px;margin:auto;padding:24px 32px 80px;overflow-wrap:anywhere}
+details{border-bottom:1px solid #dce4df;padding:16px 0}summary{cursor:pointer;font-weight:600;color:#166047}details p{padding:0 16px}
+h1{font-size:32px;line-height:1.4}h2{font-size:25px;border-bottom:1px solid #dce4df;padding-bottom:10px;margin-top:48px}h3{font-size:20px;margin-top:32px}
+blockquote{border-left:3px solid #4b8b70;margin:20px 0;padding:8px 20px;background:#f5f8f6}blockquote p{margin:4px 0}
+pre{overflow:auto;background:#f3f5f4;padding:18px;border:1px solid #dce2df;border-radius:4px;font:14px/1.7 Consolas,monospace}code{font-family:Consolas,monospace}p code,li code,td code{background:#f0f3f1;padding:2px 4px}
+.table-scroll{overflow:auto;margin:20px 0}table{border-collapse:collapse;width:100%;font-size:14px;min-width:640px}th,td{border:1px solid #d6dfd9;padding:10px 12px;text-align:left;vertical-align:top}th{background:#edf4ef}tr:nth-child(even){background:#fafcfb}
+hr{border:0;border-top:1px solid #dce4df;margin:36px 0}.diagram{border:1px solid #cbd9d0;margin:24px 0;border-radius:4px;overflow:hidden}
+.diagram-bar{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:8px 12px;background:#eff5f1;border-bottom:1px solid #d5dfd8}.diagram-bar strong{font-size:14px;margin-right:auto}
+button{display:inline-flex;align-items:center;justify-content:center;min-height:36px;min-width:36px;padding:6px 10px;border:1px solid #baccc0;border-radius:4px;background:white;color:#174b37;cursor:pointer;font:inherit;line-height:1.2}button:hover{background:#dfeee4}button:focus-visible,a:focus-visible{outline:3px solid #176f54;outline-offset:3px}button:disabled{opacity:.4;cursor:default}.percent{font-size:13px;min-width:48px;text-align:center}
+.viewport{overflow:auto;max-height:760px;padding:20px;background:#fff}.canvas{margin:auto}.canvas svg{display:block;width:100%!important;height:100%!important;max-width:none!important}
+dialog{width:96vw;max-width:none;height:94vh;max-height:94vh;padding:0;border:1px solid #a9beb0;border-radius:4px}dialog::backdrop{background:#17251bd9}dialog[open]{display:flex;flex-direction:column}dialog .viewport{flex:1;max-height:none;min-height:0}dialog .diagram-bar{flex:none}
+.error{padding:16px;color:#9b2424;background:#fff3f0}#loading{padding:24px}#top-link{white-space:nowrap}
+@media(max-width:640px){main{padding:16px 14px 48px}header{padding:12px 14px}h1{font-size:26px}h2{font-size:22px}.viewport{padding:12px;max-height:560px}.diagram-bar{padding:8px}.diagram-bar strong{width:100%}dialog{width:100vw;height:96vh;max-height:96vh}}
+@media print{header,.diagram-bar{display:none}.viewport{max-height:none;overflow:visible}.canvas{width:100%!important;height:auto!important}.canvas svg{height:auto!important}main{max-width:none;padding:0}.diagram{break-inside:avoid}h2,h3{break-after:avoid}}
+</style>
+</head>
+<body>
+<header id="top"><strong>AI 大模型零基础教程</strong><a href="#学习路线">学习路线</a><a href="#第7课agent能围绕目标选择下一步的助手">认识 Agent</a><a href="#第8课第一次落地从小助手开始">动手实践</a><a href="01-AI大模型应用工程.md">进阶参考</a><a id="top-link" href="#top">↑ 顶部</a></header>
+<div id="loading" role="status">正在加载文档与图形…</div><main id="content"></main>
+<dialog id="lightbox" aria-label="图形大图查看"><div class="diagram-bar"><strong id="dialog-title"></strong><span id="modal-tools"></span><button id="close" title="关闭大图 (Esc)" aria-label="关闭大图">✕</button></div><div class="viewport"><div class="canvas"></div></div></dialog>
+<script src="https://cdn.jsdelivr.net/npm/marked@15.0.12/marked.min.js"></script>
+<script type="module">
+const markdown = "# AI 大模型：从零开始，到做出一个 Agent\n\n你可以把这篇文章当作一次从“会聊天”到“会做事”的学习过程。不需要先会编程，也不用先学数学。我们一直用同一家小店的例子：**做一个能回答顾客问题、查询订单、协助处理售后的 AI 助手。**\n\n## 学习路线\n\n1. [先认识大模型](#第1课大模型到底是什么)：它能做什么，为什么会答错。\n2. [学会把问题说清楚](#第2课提示词怎样把需求说明白)：让回答更符合你的需要。\n3. [让它参考你的资料](#第4课知识库让-ai-先查资料再回答)：回答店铺自己的问题。\n4. [让它查询和操作系统](#第5课工具调用让-ai-获得动手能力)：从说话变成做事。\n5. [理解并做出 Agent](#第7课agent能围绕目标选择下一步的助手)：把前面的能力连接起来。\n\n---\n\n## 第1课：大模型到底是什么\n\n### 1.1 先用一句话理解\n\n**大模型是一种从大量资料中学习规律，能根据输入生成文字、图片或其他内容的 AI 模型。** 这里主要讨论能理解和生成语言的模型，也叫“大语言模型”，英文缩写是 LLM。\n\n你输入“帮我写一段生日祝福”，它能接着生成一段话。你输入一篇文章，它能总结。某些模型还能读图片、识别语音；不同模型支持的能力不一样。\n\n“大”通常指模型参数规模较大。参数可以粗略理解为学习后保存在模型内部的大量数值，它们不是一本可以直接翻页查询的百科全书。\n\n### 1.2 模型和聊天软件不是一回事\n\n**模型像发动机，聊天软件像装好发动机的汽车。** 这个比喻只帮助区分组成部分。\n\n你看到的聊天软件，通常还包含聊天界面、历史记录、联网搜索、文件上传等功能。模型本身不一定能上网，也不一定能访问你的电脑和订单系统。软件接上这些能力后，你才会看到对应功能。\n\n### 1.3 它为什么能回答，又为什么会编造\n\n生成文字时，模型会根据已有内容，一步步预测接下来适合出现的文字片段。经过训练，它学到了语言、知识和解决问题的许多规律，因此不仅能续写，也能完成解释、归纳和推理等任务。\n\n但**生成一段看起来合理的话，不等于核实了一个事实**。模型可能把不确定的内容说得很肯定，这通常叫“幻觉”。\n\n小店顾客问：“我的订单今天发货了吗？”如果模型没有查询订单系统，它就没有可靠依据回答“已经发货”。再流畅的表达，也不能代替真实查询。\n\n### 1.4 哪些任务适合先交给它\n\n| 可以尝试 | 需要怎样检查 |\n|----------|--------------|\n| 改写通知、起草文案 | 检查事实、语气和是否夸大 |\n| 总结你提供的文章 | 对照原文，检查是否漏掉关键限制 |\n| 解释陌生概念 | 对重要知识查可靠来源 |\n| 从文本提取姓名、日期等字段 | 检查遗漏、格式与识别错误 |\n| 提供方案和思路 | 结合真实条件判断是否可执行 |\n\n涉及医疗、法律、财务和重要业务决策时，不能只凭模型的一段回答做决定。\n\n**这一课记住：大模型擅长处理和生成内容，但不能默认它说的都是真的。**\n\n**试一试**：给 AI 一段你熟悉的短文，让它用三句话总结，再对照原文找出遗漏。先练习核对，再追求漂亮的表达。\n\n---\n\n## 第2课：提示词，怎样把需求说明白\n\n### 2.1 提示词就是给 AI 的任务说明\n\n提示词的英文是 Prompt。你在输入框里写的问题、提供的背景和要求，都可以是提示词的一部分。\n\n你让同事“处理一下这个”，同事也可能不知道你要什么。AI 同样需要知道：**要做什么、参考什么、有哪些限制、最后交付什么。**\n\n### 2.2 看一个前后对照\n\n不够清楚的说法：\n\n> 帮我回复顾客。\n\n更清楚的说法：\n\n> 我经营一家文具店。顾客问：“昨天买的笔还没到，怎么回事？”\n>\n> 请写一段礼貌的客服回复，先表达理解，再请顾客提供订单号。\n>\n> 不要猜测物流状态，不承诺具体送达时间。回复不超过 100 字。\n\n第二种说法明确了背景、任务、限制和输出长度。它不能保证百分之百正确，但更容易得到可用结果。\n\n### 2.3 一个可以反复使用的写法\n\n```text\n背景：我现在面对什么情况？\n任务：请你具体完成什么？\n资料：允许参考哪些信息？\n限制：哪些内容不能猜，哪些动作不能做？\n输出：用什么格式、给谁看、需要多长？\n```\n\n并不是每次都要写满五项。简单问题可以直接问，复杂任务再补充必要信息。给模型一个“专家”身份并不会自动让答案可靠；真实资料和明确要求更重要。\n\n### 2.4 回答不满意时怎么改\n\n先指出具体问题，例如：“你假设订单已发货，但我没有提供这个信息。请删掉猜测，并询问订单号。”\n\n可以提供一个你满意的示例，让它参照语气和格式。但不能只靠反复说“认真一点”“一定正确”来解决缺少事实依据的问题。\n\n**这一课记住：提示词解决的是任务表达问题，不能凭空补上 AI 没有的数据。**\n\n**试一试**：用上面的五项写法，让 AI 起草一份“店铺春节营业时间通知”。你没有确定的日期要让它留空，而不是编造。\n\n---\n\n## 第3课：先认识几个经常遇到的词\n\n### 3.1 上下文：这一次回答能参考的内容\n\n上下文可以包括你的问题、之前的部分对话、上传材料以及系统提供的说明。可以把它理解为模型回答时桌面上摆着的资料。\n\n桌面的容量有限。聊天太长、文件太多时，产品可能截取、检索或压缩部分内容；不能默认模型始终记得所有历史。不同产品的“长期记忆”也需要额外保存和读取，不是模型天然永久记住了你。\n\n### 3.2 Token：计算文字长度的一种单位\n\n模型通常不是按整篇文章一次处理，而是把内容拆成许多片段，这些片段叫 Token。它不等于汉字数，也不等于单词数，具体拆法与模型有关。\n\n你输入的内容和模型输出的内容都会占用 Token。很多 API 按输入与输出 Token 分别计费。先知道“内容越长通常消耗越多”就够了，不必现在研究拆分算法。\n\n### 3.3 API：让软件调用模型的接口\n\n平时你在网页上和 AI 聊天；如果想让自己的客服系统也使用模型，就需要一种软件之间的连接方式，API 是常见方式。\n\n可以把它理解为一个约定好的服务窗口：程序按规定提交问题，服务返回结果。API Key 是调用服务时使用的凭据，类似门禁钥匙，应放在受保护的服务端，不能公开贴进网页或代码仓库。\n\n### 3.4 训练与使用：不是同一件事\n\n**训练**是让模型通过数据调整内部参数；**推理**是使用已经训练好的模型生成结果。大多数应用开发首先做的是调用现有模型，而不是从头训练一个模型。\n\n把文件发给聊天软件，通常是让系统在当前任务中读取或检索这份文件，并不等于修改了模型参数。数据是否会被用于后续训练，要看具体产品的政策和设置。\n\n**这一课记住：上下文是参考资料，Token 是计量片段，API 是程序调用入口，训练和使用要分开理解。**\n\n---\n\n## 第4课：知识库，让 AI 先查资料再回答\n\n### 4.1 为什么需要自己的知识库\n\n小店有一份规定：“未拆封商品可以在签收后 7 天内申请退货，定制商品除外。”模型不一定知道这家店的规定，也不一定知道最新版本。\n\n一种直接的办法是：每次提问都把相关规定发给它。但资料很多时，全部塞进去会很长，也不方便维护。\n\n因此可以先从资料里找到相关段落，再让模型参考这些段落回答。这种做法叫 **RAG，中文常叫检索增强生成**。\n\n### 4.2 RAG 实际上做了什么\n\n```mermaid\nflowchart TB\n    A[\"顾客问：拆封后还能退吗？\"] --> B[\"从店铺资料中找相关规定\"]\n    B --> C[\"把规定与问题交给模型\"]\n    C --> D[\"回答，并给出原文出处\"]\n```\n\n整个过程像一次开卷问答：先找书，再参考书回答。“找书”和“回答”是两个环节，任意一个出错都可能影响结果。\n\n### 4.3 不写代码也能做的小实验\n\n先把下面这段虚构的店铺规则发给 AI：\n\n> 资料：普通商品未拆封，可在签收后 7 天内申请退货。定制商品不适用本条。商品质量问题需另行联系售后核实。\n>\n> 要求：仅根据这段资料回答，引用支持答案的原句。资料没写清楚的地方请明确说明。\n\n然后问三个问题：\n\n1. 普通商品没拆封，签收 3 天了，可以申请吗？\n2. 定制商品没拆封，可以按这条退货吗？\n3. 退货运费由谁承担？\n\n第三个问题的正确表现应该是“资料未说明”，而不是自作主张。这只是手工提供资料的练习；完整 RAG 系统还会自动搜索资料。\n\n### 4.4 两个进阶词，先知道用途就够了\n\n**Embedding，向量表示**：把一段内容转换成一串数字，方便计算内容之间的相似程度。“钱什么时候退回来”和“退款到账时间”用词不同，也可能被找到一起。\n\n**向量数据库**：保存和搜索这些数字表示的一类工具。它不是模型的大脑，也不保证搜索结果一定正确。订单号、产品型号等精确内容往往还需要关键词搜索。\n\n刚开始不用急着自己搭数据库。先验证资料是否准确、问题能否在资料中找到答案，以及引用是否真的支持回答。\n\n**这一课记住：RAG 是先查资料再回答，适合自己的制度、手册和经常更新的知识。**\n\n---\n\n## 第5课：工具调用，让 AI 获得动手能力\n\n### 5.1 知识库能查规定，但查不到实时订单\n\n“店铺通常多久发货”可以查制度；“我的订单现在发货了吗”需要查订单系统。这时需要工具。\n\n**工具就是开发者开放给 AI 使用的具体功能**，例如查订单、查天气、计算运费、创建售后工单。工具调用的英文常见写法是 Tool Calling。\n\n### 5.2 不是模型自己钻进数据库\n\n模型提出“想调用哪个工具，以及传什么参数”；程序检查请求、真正执行工具，再把结果交回模型。\n\n```mermaid\nflowchart TB\n    A[\"顾客提供订单号 A123\"] --> B[\"模型提出：查询订单 A123\"]\n    B --> C[\"程序验证身份和参数\"]\n    C --> D[\"订单系统返回：尚未发货\"]\n    D --> E[\"模型根据真实结果回复\"]\n```\n\n比如模型提出：\n\n```text\n工具：查询订单\n参数：订单号 = A123\n```\n\n程序不能因此直接查询任何订单。还要检查当前用户是否有权看 A123。**权限由程序检查，不能让模型自己决定。**\n\n### 5.3 查信息和改信息，要区别对待\n\n“查询物流”主要是读取信息；“提交退款”会改变业务状态。越重要、越难撤回的操作，越需要严格权限、明确确认和执行记录。\n\n例如 AI 可以先生成退款申请草稿，让用户核对订单、金额和原因；具备权限的人确认后，系统才提交。模型回复“已退款”不能当成退款成功，必须以支付或业务系统的真实结果为准。\n\n**这一课记住：工具让系统能做事；模型负责提出请求，程序负责验证和执行。**\n\n---\n\n## 第6课：工作流，把步骤提前排好\n\n### 6.1 工作流就是一张办事流程表\n\n例如你规定客服每次都按顺序完成：收集订单号 → 查询订单 → 判断是否超时 → 给出回复。这些步骤和分支提前设计好了，就叫工作流，英文是 Workflow。\n\n```mermaid\nflowchart TB\n    A[\"收集订单号\"] --> B[\"查询订单\"]\n    B --> C{\"是否超过承诺发货时间？\"}\n    C -- 是 --> D[\"生成催单建议\"]\n    C -- 否 --> E[\"说明当前进度\"]\n```\n\n流程中的某一步可以使用模型，比如把查询结果整理成礼貌的回复。其他步骤可以由普通程序完成，不必每一步都问 AI。\n\n### 6.2 什么时候优先用工作流\n\n如果步骤明确、判断条件清楚，工作流通常更容易检查和控制。例如固定报表生成、固定格式的信息提取、明确规则的审批。\n\n不要因为 Agent 听起来新，就把简单流程改成模型反复思考。先把业务做对，再增加灵活性。\n\n**这一课记住：工作流主要由人提前决定步骤，模型可以作为其中一个环节。**\n\n---\n\n## 第7课：Agent，能围绕目标选择下一步的助手\n\n### 7.1 Agent 到底是什么\n\nAgent 常翻译成“智能体”。在这里，你可以理解为：**一个围绕目标，根据当前情况选择下一步、调用工具、查看结果，并继续处理任务的 AI 系统。**\n\n它不一定是机器人，也不一定需要多个模型。不同产品对 Agent 的定义会有差异，关键是看它实际能如何推进任务。\n\n普通对话可能只回答“你可以去查物流”。接好工具的 Agent 可以尝试查询物流，再根据结果决定是否需要查库存或生成工单草稿。\n\n### 7.2 用一个完整例子理解\n\n顾客说：“帮我查一下订单 A123 为什么没发货，必要时帮我催一下。”\n\n1. 助手查询订单，发现状态是待发货。\n2. 助手根据结果查询库存，发现商品正在补货。\n3. 助手查询店铺规则，确认可以创建催单工单。\n4. 助手解释原因，展示工单草稿，并请求确认。\n5. 用户确认后，系统检查权限并创建工单。\n6. 助手收到真实工单号，再告诉用户处理结果。\n\n如果查订单发现已经发货，它可能改查物流，而不用继续查库存。这种根据结果选择下一步的能力，是理解 Agent 的重点。\n\n### 7.3 它如何一轮轮工作\n\n```mermaid\nflowchart TB\n    A[\"收到目标\"] --> B[\"根据现有信息选下一步\"]\n    B --> C{\"现在该做什么？\"}\n    C -- 缺少信息 --> D[\"向用户补问\"]\n    C -- 需要查询 --> E[\"程序检查并执行工具\"]\n    E --> B\n    C -- 重要操作 --> F[\"等待用户确认后执行\"]\n    F --> G[\"检查真实执行结果\"]\n    G --> B\n    C -- 已完成或无法继续 --> H[\"报告结果或交给人工\"]\n```\n\n这不是无限循环。应该限制最多尝试次数、总时长和费用；反复失败就停止，并告诉用户卡在哪里。\n\n### 7.4 几个概念放在一起比较\n\n| 名称 | 主要解决的问题 | 小店里的例子 |\n|------|----------------|--------------|\n| 提示词 | 怎么说明任务 | 请用礼貌语气回复，不猜物流 |\n| RAG | 去哪里找参考资料 | 查最新退货规定 |\n| 工具调用 | 怎么访问外部功能 | 查询订单 A123 |\n| 工作流 | 固定步骤怎么执行 | 查订单后按明确规则分流 |\n| Agent | 下一步需要根据结果选择怎么办 | 查订单、再决定查物流还是库存 |\n\n实际产品经常组合使用它们。Agent 可以通过工具执行 RAG，也可以在一个固定工作流中只负责一小段调查任务。\n\n**这一课记住：Agent 不是“更会聊天”的别名，而是一个有目标、能选步骤、能借助工具推进任务的系统。**\n\n---\n\n## 第8课：第一次落地，从小助手开始\n\n### 8.1 先定一个小目标\n\n推荐的第一个项目是“店铺售后问答助手”：只回答店铺规则，有依据就引用，没有依据就说不知道。先不退款、不改订单、不付款。\n\n你需要准备：一份准确的规则文档、十几个真实问题、每个问题的参考答案。刚开始甚至可以用人工粘贴资料的方式，先验证回答是否有用。\n\n### 8.2 分四个版本，逐步加能力\n\n| 版本 | 做到什么 | 怎么判断完成 |\n|------|----------|--------------|\n| 第 1 版：会回答 | 给资料，回答售后问题 | 能按资料回答；资料没写时不乱编 |\n| 第 2 版：会找资料 | 自动从知识库找相关规则 | 能找到正确段落，引用可核对 |\n| 第 3 版：会查询 | 接入只读订单查询 | 只查当前用户有权访问的订单，失败时明确说明 |\n| 第 4 版：会协助处理 | 生成工单草稿，确认后提交 | 有真实工单号，重复点击不会创建两份 |\n\n第 3、4 版通常需要开发者协助接入业务系统。拖拽式平台可以减少编写部分代码的工作，但不会自动解决系统权限、数据质量和业务接口问题。\n\n### 8.3 一开始需要哪些东西\n\n**现有聊天产品**适合练习提示词与提供资料；**支持知识库和流程的平台**适合快速验证；**自己编写程序调用 API**适合需要深度接入系统和定制控制的场景。\n\n选哪一种取决于你的目标。先明确“要解决谁的哪个问题”，再选平台。还要看资料能否上传外部服务，以及使用成本是否能接受。\n\n### 8.4 测试不要只问一道顺手的问题\n\n至少试试下面这些情况：\n\n1. 正常问题：未拆封商品签收 3 天，是否可申请退货？\n2. 资料缺失：退货运费谁承担？规则没写时能否承认不知道？\n3. 信息不全：没给订单号时，会不会先补问？\n4. 权限问题：能否拒绝查询不属于当前用户的订单？\n5. 系统故障：查询服务失败时，会不会虚构成功？\n6. 重复操作：同一个工单确认两次，会不会创建两份？\n\n前两个版本先测问答相关内容，接入工具后再加后面的测试。把失败问题记下来，修好后再测一次。\n\n**这一课记住：先做一个小而可信的闭环，每增加一种能力，就增加对应检查。**\n\n---\n\n## 第9课：学到这里，再看进阶知识\n\n### 9.1 微调：让模型更适应某类任务\n\n微调是在已有模型基础上，用专门的数据进一步训练，调整模型参数。例如让模型更稳定地处理某类专业文本或输出风格。\n\n可以把提示词理解为“这次任务怎么做”，RAG 理解为“这次先参考什么”，微调理解为“通过训练改变部分做事习惯”。这只是帮助入门的比喻，三者都不能保证事实正确。\n\n对经常变化的店铺规定，通常先考虑更新知识库；只有提示词和现有方法不足，且有合适数据与评测时，再考虑微调。\n\n### 9.2 云端与本地：模型在哪里运行\n\n**云端 API**是调用服务商运行的模型，启动较快，通常按使用量付费。需要查看数据处理规则、网络条件和调用限制。\n\n**本地部署**是把可部署的模型放在自己的电脑或服务器运行。它需要合适硬件、许可和维护能力；并不是下载完模型就一定更便宜、更快。即使本地运行，日志、联网工具和其他组件仍需管理好数据。\n\n### 9.3 MCP：一种连接工具的约定\n\n前面说过，Agent 需要连接查询订单等工具。MCP 是一种让 AI 应用连接外部工具与资料的协议，可以帮助减少部分重复对接工作。\n\n你现在只要记住它与“怎么连接”有关。它不等于 Agent，也不会自动保证用户有权查询订单或执行退款。\n\n### 9.4 多 Agent：多个助手分工\n\n比如一个助手查资料，一个助手分析问题，再由另一个汇总。分工有时有用，但也会增加沟通、费用和排错难度。一个助手已经能完成的小任务，不必急着拆成很多个。\n\n### 9.5 下一步学什么\n\n如果你只是希望更好地使用 AI，继续练习任务表达、资料核对和常见错误识别即可。\n\n如果你想亲手做应用，建议依次学习：基础 Python → API 调用 → 简单网页与服务 → 知识库检索 → 工具调用 → Agent 的流程与测试。框架可以以后再选。\n\n需要工程实施细节时，再看 [AI 大模型应用工程参考文档](01-AI大模型应用工程.md)，其中包含 ERP Agent 的架构、接口、审批和上线方案。\n\n---\n\n## 自测：你能解释这五个问题吗\n\n\u003cdetails>\n\u003csummary>1. 为什么 AI 说“已发货”，不一定代表真的发货？\u003c/summary>\n\n\u003cp>因为它可能只是生成了一句合理的话。需要确认系统是否真的调用订单或物流工具，并取得了对应订单的真实结果。\u003c/p>\n\u003c/details>\n\n\u003cdetails>\n\u003csummary>2. 想让 AI 按照店铺最新规定回答，先考虑什么？\u003c/summary>\n\n\u003cp>先提供准确资料；资料多时考虑 RAG，让系统先找到相关规定，再参考原文回答，并提供出处。\u003c/p>\n\u003c/details>\n\n\u003cdetails>\n\u003csummary>3. RAG 和工具调用有什么区别？\u003c/summary>\n\n\u003cp>RAG 重点是找到参考资料来帮助回答；工具调用是请求外部功能，例如查询实时订单或创建工单。检索资料本身也可以封装成一个工具。\u003c/p>\n\u003c/details>\n\n\u003cdetails>\n\u003csummary>4. 固定的三个步骤，一定要用 Agent 吗？\u003c/summary>\n\n\u003cp>不一定。步骤明确时，先用工作流通常更容易控制。需要根据中间结果灵活选择下一步时，再考虑 Agent。\u003c/p>\n\u003c/details>\n\n\u003cdetails>\n\u003csummary>5. Agent 要提交退款，谁应该检查权限？\u003c/summary>\n\n\u003cp>由服务端程序与业务系统检查权限、确认和实际执行结果。不能只凭模型的判断或一段“已经批准”的聊天文字执行。\u003c/p>\n\u003c/details>\n";
+const content = document.getElementById('content');
+const loading = document.getElementById('loading');
+const dialog = document.getElementById('lightbox');
+let active = null;
+const slug = text => text.toLowerCase().replace(/[^\p{L}\p{N}_ -]/gu, '').replace(/ /g, '-');
+function makeButton(label, title, action) {
+  const button = document.createElement('button');
+  button.textContent = label; button.title = title; button.setAttribute('aria-label', title);
+  button.addEventListener('click', action); return button;
+}
+function setupView(canvas, viewport, width, height, tools) {
+  let scale = 1;
+  const percent = document.createElement('span'); percent.className = 'percent'; percent.setAttribute('aria-live','polite');
+  function resize(value) {
+    scale = Math.min(4, Math.max(.1, value));
+    canvas.style.width = Math.round(width * scale) + 'px';
+    canvas.style.height = Math.round(height * scale) + 'px';
+    percent.textContent = Math.round(scale * 100) + '%';
+  }
+  function fit() { resize(Math.min(1, (viewport.clientWidth - 40) / width)); }
+  tools.append(makeButton('−', '缩小图形', () => resize(scale / 1.25)), percent,
+    makeButton('+', '放大图形', () => resize(scale * 1.25)),
+    makeButton('↔', '适应窗口宽度', fit), makeButton('1:1', '原始尺寸', () => resize(1)));
+  fit(); return { fit, resize };
+}
+function openDiagram(svg, width, height, title, trigger) {
+  const canvas = dialog.querySelector('.canvas');
+  canvas.replaceChildren(svg.cloneNode(true));
+  // A clone must not reuse Mermaid marker and label IDs from the inline SVG.
+  const prefix = 'modal-' + Date.now() + '-';
+  const cloned = canvas.firstElementChild;
+  const ids = new Map([...cloned.querySelectorAll('[id]'), cloned].filter(el => el.id).map(el => [el.id, prefix + el.id]));
+  for (const el of [cloned, ...cloned.querySelectorAll('*')]) {
+    for (const attr of [...el.attributes]) {
+      let value = attr.value;
+      if (attr.name === 'id') value = ids.get(value) || value;
+      else if (attr.name === 'aria-labelledby' || attr.name === 'aria-describedby') value = value.split(' ').map(id => ids.get(id) || id).join(' ');
+      else { for (const [id, renamed] of ids) { value = value.split('url(#' + id + ')').join('url(#' + renamed + ')'); if (value === '#' + id) value = '#' + renamed; } }
+      el.setAttribute(attr.name, value);
+    }
+  }
+  for (const style of cloned.querySelectorAll('style')) {
+    style.textContent = style.textContent.split('#' + svg.id).join('#' + ids.get(svg.id));
+  }
+  document.getElementById('dialog-title').textContent = title;
+  const tools = document.getElementById('modal-tools'); tools.replaceChildren(); tools.style.display = 'contents';
+  active = trigger; dialog.showModal();
+  setupView(canvas, dialog.querySelector('.viewport'), width, height, tools).resize(1);
+  dialog.querySelector('.viewport').scrollTo(0, 0);
+}
+document.getElementById('close').onclick = () => dialog.close();
+dialog.addEventListener('close', () => { active?.focus(); });
+try {
+  if (!window.marked) throw new Error('Markdown 渲染库加载失败');
+  content.innerHTML = marked.parse(markdown);
+  for (const heading of content.querySelectorAll('h1,h2,h3')) heading.id = slug(heading.textContent);
+  for (const table of content.querySelectorAll('table')) { const wrapper = document.createElement('div'); wrapper.className = 'table-scroll'; table.before(wrapper); wrapper.append(table); }
+  loading.textContent = '正文已加载，正在渲染图形…';
+  const {default: mermaid} = await import('https://cdn.jsdelivr.net/npm/mermaid@11.4.1/dist/mermaid.esm.min.mjs');
+  mermaid.initialize({startOnLoad:false,securityLevel:'strict',theme:'neutral',flowchart:{useMaxWidth:false},themeVariables:{fontSize:'18px',fontFamily:'system-ui, Microsoft YaHei, sans-serif'}});
+  let index = 0;
+  for (const code of [...content.querySelectorAll('pre > code.language-mermaid')]) {
+    const pre = code.parentElement;
+    try {
+      const number = ++index;
+      const {svg} = await mermaid.render('diagram-' + number, code.textContent);
+      const section = document.createElement('section'); section.className = 'diagram';
+      const bar = document.createElement('div'); bar.className = 'diagram-bar';
+      const title = '图 ' + number;
+      const label = document.createElement('strong'); label.textContent = title; bar.append(label);
+      const viewport = document.createElement('div'); viewport.className = 'viewport'; viewport.tabIndex = 0; viewport.setAttribute('aria-label', title + '，可滚动');
+      const canvas = document.createElement('div'); canvas.className = 'canvas'; canvas.innerHTML = svg;
+      viewport.append(canvas); section.append(bar, viewport); pre.replaceWith(section);
+      const element = canvas.querySelector('svg'); const box = element.viewBox.baseVal;
+      const width = box.width || 1000, height = box.height || 600;
+      setupView(canvas, viewport, width, height, bar);
+      const open = makeButton('⛶', '查看大图', () => openDiagram(element,width,height,title,open)); bar.append(open);
+    } catch (error) {
+      const message = document.createElement('p'); message.className = 'error'; message.textContent = '图形渲染失败，保留 Mermaid 源码：' + error.message; pre.before(message);
+    }
+  }
+  loading.remove();
+  if (location.hash) document.getElementById(decodeURIComponent(location.hash.slice(1)))?.scrollIntoView();
+} catch(error) {
+  loading.className = 'error'; loading.textContent = error.message + '。请联网后刷新；也可打开同目录 Markdown 原文。';
+  if (!content.textContent) { const pre = document.createElement('pre'); pre.textContent = markdown; content.append(pre); }
+}
+</script>
+</body>
+</html>

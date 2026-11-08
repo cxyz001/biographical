@@ -1,0 +1,4 @@
+serial,board_rev,firmware,value_v,lower_v,upper_v,uncertainty_v
+DEMO-001,A1,sim-1,3.30,3.20,3.40,0.02
+DEMO-002,A1,sim-1,3.39,3.20,3.40,0.02
+DEMO-003,A1,sim-1,3.50,3.20,3.40,0.02

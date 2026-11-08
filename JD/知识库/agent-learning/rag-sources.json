@@ -1,0 +1,15 @@
+{
+  "checked_date": "2026-10-24",
+  "note": "本次网络请求受限；以下为用于继续阅读和核对实现的公开 GitHub 仓库入口，未声称读取了当前分支的完整正文。",
+  "repositories": [
+    {"repository":"explodinggradients/ragas","topics":["RAG evaluation","faithfulness","context precision","context recall"],"url":"https://github.com/explodinggradients/ragas"},
+    {"repository":"confident-ai/deepeval","topics":["LLM/RAG evaluation","hallucination metrics"],"url":"https://github.com/confident-ai/deepeval"},
+    {"repository":"truera/trulens","topics":["LLM observability","groundedness"],"url":"https://github.com/truera/trulens"},
+    {"repository":"run-llama/llama_index","topics":["document parsing","retrievers","RAG"],"url":"https://github.com/run-llama/llama_index"},
+    {"repository":"deepset-ai/haystack","topics":["pipelines","retrieval","reranking"],"url":"https://github.com/deepset-ai/haystack"},
+    {"repository":"FlagOpen/FlagEmbedding","topics":["embedding","bge reranker"],"url":"https://github.com/FlagOpen/FlagEmbedding"},
+    {"repository":"spring-projects/spring-ai","topics":["Spring Boot","model providers","vector stores"],"url":"https://github.com/spring-projects/spring-ai"},
+    {"repository":"qdrant/qdrant","topics":["vector database","filtering"],"url":"https://github.com/qdrant/qdrant"},
+    {"repository":"pgvector/pgvector","topics":["PostgreSQL vector search"],"url":"https://github.com/pgvector/pgvector"}
+  ]
+}

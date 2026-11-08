@@ -1,0 +1,18 @@
+# Deployment template only; adapt paths/user, then validate on target systemd.
+[Unit]
+Description=Edge telemetry lab one-shot collector
+After=local-fs.target
+
+[Service]
+Type=oneshot
+User=edge
+Group=edge
+StateDirectory=edge-lab
+WorkingDirectory=/var/lib/edge-lab
+ExecStart=/usr/bin/python3 /opt/edge-lab/edge_lab.py --db /var/lib/edge-lab/edge.db collect --count 5
+NoNewPrivileges=true
+ProtectSystem=strict
+ProtectHome=true
+PrivateTmp=true
+
+# Trigger manually or create a timer; this template is not an always-on daemon.

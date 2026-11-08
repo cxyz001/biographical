@@ -1,0 +1,286 @@
+{
+  "note": "Hashes identify retrieved UTF-8 text, not Git commits; branch links may change. Entries include only successfully read files.",
+  "checked_date": "2026-10-23",
+  "sources": [
+    {
+      "repository": "openjdk/jdk",
+      "branch": "master",
+      "path": "src/java.base/share/classes/java/util/concurrent/ThreadPoolExecutor.java",
+      "github_url": "https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/concurrent/ThreadPoolExecutor.java",
+      "raw_url": "https://raw.githubusercontent.com/openjdk/jdk/master/src/java.base/share/classes/java/util/concurrent/ThreadPoolExecutor.java",
+      "checked_date": "2026-10-23",
+      "text_sha256": "c4ceb91f00db58416ad942fac78fcf9867d973c7d2651fa9bed0039f61952170",
+      "text_characters": 81944
+    },
+    {
+      "repository": "openjdk/jdk",
+      "branch": "master",
+      "path": "src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java",
+      "github_url": "https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java",
+      "raw_url": "https://raw.githubusercontent.com/openjdk/jdk/master/src/java.base/share/classes/java/util/concurrent/ConcurrentHashMap.java",
+      "checked_date": "2026-10-23",
+      "text_sha256": "3715bbfd810ca0c288fc014448cb13177dc7e64c0122929ee54b6878fd66d690",
+      "text_characters": 269234
+    },
+    {
+      "repository": "openjdk/jdk",
+      "branch": "master",
+      "path": "src/java.base/share/classes/java/util/concurrent/CompletableFuture.java",
+      "github_url": "https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/concurrent/CompletableFuture.java",
+      "raw_url": "https://raw.githubusercontent.com/openjdk/jdk/master/src/java.base/share/classes/java/util/concurrent/CompletableFuture.java",
+      "checked_date": "2026-10-23",
+      "text_sha256": "4d69f31158e95ff651dc03ea3c61566d76160773b0ac3a4b0a8d706e99c0e530",
+      "text_characters": 116110
+    },
+    {
+      "repository": "spring-projects/spring-boot",
+      "branch": "main",
+      "path": "README.adoc",
+      "github_url": "https://github.com/spring-projects/spring-boot/blob/main/README.adoc",
+      "raw_url": "https://raw.githubusercontent.com/spring-projects/spring-boot/main/README.adoc",
+      "checked_date": "2026-10-23",
+      "text_sha256": "05a1bce942de45a7ddb341f1af1dc95e77ed8d1567b7d6c8410f200d6da407ea",
+      "text_characters": 5279
+    },
+    {
+      "repository": "spring-guides/gs-rest-service",
+      "branch": "main",
+      "path": "README.adoc",
+      "github_url": "https://github.com/spring-guides/gs-rest-service/blob/main/README.adoc",
+      "raw_url": "https://raw.githubusercontent.com/spring-guides/gs-rest-service/main/README.adoc",
+      "checked_date": "2026-10-23",
+      "text_sha256": "f6bde6009edcfd8ccc5c31ebef042e649c041bdf200b05dc3899ac3dcd892071",
+      "text_characters": 10786
+    },
+    {
+      "repository": "spring-guides/gs-managing-transactions",
+      "branch": "main",
+      "path": "README.adoc",
+      "github_url": "https://github.com/spring-guides/gs-managing-transactions/blob/main/README.adoc",
+      "raw_url": "https://raw.githubusercontent.com/spring-guides/gs-managing-transactions/main/README.adoc",
+      "checked_date": "2026-10-23",
+      "text_sha256": "f31732eaacbc8f9a99b534cc38d35aa27e781e891b19b0c610d155f0d46252cd",
+      "text_characters": 11886
+    },
+    {
+      "repository": "mybatis/mybatis-3",
+      "branch": "master",
+      "path": "README.md",
+      "github_url": "https://github.com/mybatis/mybatis-3/blob/master/README.md",
+      "raw_url": "https://raw.githubusercontent.com/mybatis/mybatis-3/master/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "f6f9e411f7908aea1dbccacf73885b50b3f9205f53546bf1928360d24d8ba858",
+      "text_characters": 2589
+    },
+    {
+      "repository": "redisson/redisson",
+      "branch": "master",
+      "path": "README.md",
+      "github_url": "https://github.com/redisson/redisson/blob/master/README.md",
+      "raw_url": "https://raw.githubusercontent.com/redisson/redisson/master/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "73460b9343cb3d7b35e66e50670a6d5207b6fd303b05006ff03e83246ec0bde9",
+      "text_characters": 7253
+    },
+    {
+      "repository": "apache/kafka",
+      "branch": "trunk",
+      "path": "README.md",
+      "github_url": "https://github.com/apache/kafka/blob/trunk/README.md",
+      "raw_url": "https://raw.githubusercontent.com/apache/kafka/trunk/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "5550c38ce0519656f04aab69250ae7cdff499040bcb67c95bfb34f1b0dfc7e9a",
+      "text_characters": 14713
+    },
+    {
+      "repository": "netty/netty",
+      "branch": "4.1",
+      "path": "README.md",
+      "github_url": "https://github.com/netty/netty/blob/4.1/README.md",
+      "raw_url": "https://raw.githubusercontent.com/netty/netty/4.1/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "b31cae89cf38f8f9020373eae17f96164244738cc718b6becaa528f333ab5545",
+      "text_characters": 2740
+    },
+    {
+      "repository": "testcontainers/testcontainers-java",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/testcontainers/testcontainers-java/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/testcontainers/testcontainers-java/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "aad5dd088f9ee8a2cac58a94a95aefd9d8612fcfc57733a407f0cdc7486a62ef",
+      "text_characters": 1724
+    },
+    {
+      "repository": "resilience4j/resilience4j",
+      "branch": "master",
+      "path": "README.adoc",
+      "github_url": "https://github.com/resilience4j/resilience4j/blob/master/README.adoc",
+      "raw_url": "https://raw.githubusercontent.com/resilience4j/resilience4j/master/README.adoc",
+      "checked_date": "2026-10-23",
+      "text_sha256": "807cb41556c23e64ece445a3dbc158cb688cf50b0076480ba5f30946b56ff9a8",
+      "text_characters": 25934
+    },
+    {
+      "repository": "apache/incubator-seata",
+      "branch": "2.x",
+      "path": "README.md",
+      "github_url": "https://github.com/apache/incubator-seata/blob/2.x/README.md",
+      "raw_url": "https://raw.githubusercontent.com/apache/incubator-seata/2.x/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "fd4d38efdadc0a11083d0d15dfc37e4b3bbba53541f118b6505e7c4d851e138c",
+      "text_characters": 29877
+    },
+    {
+      "repository": "geoserver/geoserver",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/geoserver/geoserver/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/geoserver/geoserver/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "4def5391e3c1f76cf86fafbce81bc056ebabcea2e4118602c8e46b11d84f8c67",
+      "text_characters": 3432
+    },
+    {
+      "repository": "locationtech/jts",
+      "branch": "master",
+      "path": "README.md",
+      "github_url": "https://github.com/locationtech/jts/blob/master/README.md",
+      "raw_url": "https://raw.githubusercontent.com/locationtech/jts/master/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "c7aac9f5ebaef8c1b5daf0cfbb2315855fa90f6648bef98784ec71c583954322",
+      "text_characters": 3678
+    },
+    {
+      "repository": "ZLMediaKit/ZLMediaKit",
+      "branch": "master",
+      "path": "README.md",
+      "github_url": "https://github.com/ZLMediaKit/ZLMediaKit/blob/master/README.md",
+      "raw_url": "https://raw.githubusercontent.com/ZLMediaKit/ZLMediaKit/master/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "52d659c9883e412389b48ca8d67d4c32d68a67c35862b3de96cfe78e3964003a",
+      "text_characters": 17777
+    },
+    {
+      "repository": "dji-sdk/Mobile-SDK-Android-V5",
+      "branch": "dev-sdk-main",
+      "path": "README.md",
+      "github_url": "https://github.com/dji-sdk/Mobile-SDK-Android-V5/blob/dev-sdk-main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/dji-sdk/Mobile-SDK-Android-V5/dev-sdk-main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "6e2d52d6add9d42a69f99fcc473d8771d619cdc0498d7f85886de93703d82ada",
+      "text_characters": 4063
+    },
+    {
+      "repository": "spring-projects/spring-security",
+      "branch": "main",
+      "path": "README.adoc",
+      "github_url": "https://github.com/spring-projects/spring-security/blob/main/README.adoc",
+      "raw_url": "https://raw.githubusercontent.com/spring-projects/spring-security/main/README.adoc",
+      "checked_date": "2026-10-23",
+      "text_sha256": "049115c5d26b691057ba9c5a05641aa3d9cc996d568e277a98e7d5e466e1ce15",
+      "text_characters": 4913
+    },
+    {
+      "repository": "junit-team/junit-framework",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/junit-team/junit-framework/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/junit-team/junit-framework/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "d8ff2f0759f4be55817f0b1f9141fa98f0d14d9659ebe958c0efe55084d4277c",
+      "text_characters": 5690
+    },
+    {
+      "repository": "micrometer-metrics/micrometer",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/micrometer-metrics/micrometer/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/micrometer-metrics/micrometer/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "de50762816299e17b65fa94c22e8a2189d84954b7ac9b80d205971a316323ddb",
+      "text_characters": 2466
+    },
+    {
+      "repository": "spring-projects/spring-petclinic",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/spring-projects/spring-petclinic/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/spring-projects/spring-petclinic/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "b53440fdf1a73969b7dcf3b3f1801dda2de31d5935439a739971b42f27e4f5bc",
+      "text_characters": 10541
+    },
+    {
+      "repository": "spring-guides/gs-rest-service",
+      "branch": "main",
+      "path": "complete/src/main/java/com/example/restservice/GreetingController.java",
+      "github_url": "https://github.com/spring-guides/gs-rest-service/blob/main/complete/src/main/java/com/example/restservice/GreetingController.java",
+      "raw_url": "https://raw.githubusercontent.com/spring-guides/gs-rest-service/main/complete/src/main/java/com/example/restservice/GreetingController.java",
+      "checked_date": "2026-10-23",
+      "text_sha256": "ac8984576f74c759e814ac281257e21388427573c451ffe5b7f7824138e0348a",
+      "text_characters": 619
+    },
+    {
+      "repository": "spring-guides/gs-managing-transactions",
+      "branch": "main",
+      "path": "complete/src/main/java/com/example/managingtransactions/BookingService.java",
+      "github_url": "https://github.com/spring-guides/gs-managing-transactions/blob/main/complete/src/main/java/com/example/managingtransactions/BookingService.java",
+      "raw_url": "https://raw.githubusercontent.com/spring-guides/gs-managing-transactions/main/complete/src/main/java/com/example/managingtransactions/BookingService.java",
+      "checked_date": "2026-10-23",
+      "text_sha256": "dc1adeb0f587df80cb44ec2c5fcaccacce42e73d52a8ed4b07cd109c26fd89e6",
+      "text_characters": 939
+    },
+    {
+      "repository": "spring-projects/spring-framework",
+      "branch": "main",
+      "path": "spring-tx/src/main/java/org/springframework/transaction/interceptor/TransactionAspectSupport.java",
+      "github_url": "https://github.com/spring-projects/spring-framework/blob/main/spring-tx/src/main/java/org/springframework/transaction/interceptor/TransactionAspectSupport.java",
+      "raw_url": "https://raw.githubusercontent.com/spring-projects/spring-framework/main/spring-tx/src/main/java/org/springframework/transaction/interceptor/TransactionAspectSupport.java",
+      "checked_date": "2026-10-23",
+      "text_sha256": "59bb18377aa404ee3bc983f0000f3bd59b82a58d4c6316f64caa644e5ef9935f",
+      "text_characters": 43389
+    },
+    {
+      "repository": "netty/netty",
+      "branch": "4.1",
+      "path": "example/src/main/java/io/netty/example/echo/EchoServerHandler.java",
+      "github_url": "https://github.com/netty/netty/blob/4.1/example/src/main/java/io/netty/example/echo/EchoServerHandler.java",
+      "raw_url": "https://raw.githubusercontent.com/netty/netty/4.1/example/src/main/java/io/netty/example/echo/EchoServerHandler.java",
+      "checked_date": "2026-10-23",
+      "text_sha256": "c790511d093d2da8bc4cc416615924a943a7231519aacd0a491a6fe5afd99dec",
+      "text_characters": 1391
+    },
+    {
+      "repository": "openjdk/jdk",
+      "branch": "master",
+      "path": "src/java.base/share/classes/java/util/concurrent/Executors.java",
+      "github_url": "https://github.com/openjdk/jdk/blob/master/src/java.base/share/classes/java/util/concurrent/Executors.java",
+      "raw_url": "https://raw.githubusercontent.com/openjdk/jdk/master/src/java.base/share/classes/java/util/concurrent/Executors.java",
+      "checked_date": "2026-10-23",
+      "text_sha256": "513db4f9976caf23e0c06cdc19f60580b34438f544cba35be5315f7be9b77de4",
+      "text_characters": 33198
+    },
+    {
+      "repository": "Snailclimb/JavaGuide",
+      "branch": "main",
+      "path": "README.md",
+      "github_url": "https://github.com/Snailclimb/JavaGuide/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/Snailclimb/JavaGuide/main/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "b57846f9955a275ad42d5e96c1e1808c51fa01abe94d422418b887c827dd043f",
+      "text_characters": 19990
+    },
+    {
+      "repository": "iluwatar/java-design-patterns",
+      "branch": "master",
+      "path": "README.md",
+      "github_url": "https://github.com/iluwatar/java-design-patterns/blob/master/README.md",
+      "raw_url": "https://raw.githubusercontent.com/iluwatar/java-design-patterns/master/README.md",
+      "checked_date": "2026-10-23",
+      "text_sha256": "8dd9f5ca9437a7a7f912eb8de5407aa821e418c41c41db42480ce930e7be9909",
+      "text_characters": 155914
+    }
+  ]
+}

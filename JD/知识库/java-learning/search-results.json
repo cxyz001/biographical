@@ -1,0 +1,31 @@
+{
+  "query": "java spring boot tutorial",
+  "checked_date": "2026-10-23",
+  "results": [
+    {
+      "repository": "in28minutes/master-spring-and-spring-boot",
+      "url": "https://github.com/in28minutes/master-spring-and-spring-boot",
+      "description": "Spring and Spring Boot Tutorial For Absolute Beginners - 10-in-1 - Spring to Spring Boot to REST API to Full Stack to Containers to Cloud"
+    },
+    {
+      "repository": "darbyluv2code/spring-boot-3-spring-6-hibernate-for-beginners",
+      "url": "https://github.com/darbyluv2code/spring-boot-3-spring-6-hibernate-for-beginners",
+      "description": "Source code for the course: Spring Boot 3, Spring 6 and Hibernate for Beginners"
+    },
+    {
+      "repository": "rieckpil/blog-tutorials",
+      "url": "https://github.com/rieckpil/blog-tutorials",
+      "description": ":star: Codebase for various tutorials  about Java, Spring Boot, AWS, Kotlin, and Testing"
+    },
+    {
+      "repository": "Hakky54/mutual-tls-ssl",
+      "url": "https://github.com/Hakky54/mutual-tls-ssl",
+      "description": "🔐 Tutorial of setting up Security for your API with one way authentication with TLS/SSL and mutual authentication for a java based web server and a client with both Spring Boot. Different clients are provided such as Apache HttpClient, OkHttp, Spring RestTemplate, Spring WebFlux WebClient Jetty and Netty, the old and the new JDK HttpClient, the old and the new Jersey Client, Google HttpClient, Unirest, Retrofit, Feign, Methanol, vertx, Scala client Finagle, Featherbed, Dispatch Reboot, AsyncHttpClient, Sttp, Akka, Requests Scala, Http4s Blaze, Kotlin client Fuel, http4k, Kohttp and ktor. Also other server examples are available such as jersey with grizzly. Also gRPC, WebSocket and ElasticSearch examples are included"
+    },
+    {
+      "repository": "darbyluv2code/fullstack-angular-and-springboot",
+      "url": "https://github.com/darbyluv2code/fullstack-angular-and-springboot",
+      "description": "Source code for the popular course - Full Stack: Angular and Spring Boot"
+    }
+  ]
+}

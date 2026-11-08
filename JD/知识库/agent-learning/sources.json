@@ -1,0 +1,167 @@
+{
+  "method": "Public GitHub raw files read directly. GitHub search returned HTTP 429 and anonymous API returned HTTP 403. Branch URLs are mutable; SHA-256 hashes identify downloaded text, not git commits.",
+  "files": [
+    {
+      "repository": "datawhalechina/hello-agents",
+      "path": "README.md",
+      "url": "https://github.com/datawhalechina/hello-agents/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/datawhalechina/hello-agents/main/README.md",
+      "checked_date": "2026-10-23",
+      "characters": 13604,
+      "sha256": "086d22ae09204565b271e9fb5f68b3ca9ce72de9bda46f0a50539e1248a32223"
+    },
+    {
+      "repository": "datawhalechina/llm-universe",
+      "path": "README.md",
+      "url": "https://github.com/datawhalechina/llm-universe/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/datawhalechina/llm-universe/main/README.md",
+      "checked_date": "2026-10-23",
+      "characters": 7701,
+      "sha256": "3b07a79414f364bf38114426b8789e8451c75728d6aa7298b2ee9fdf37f02371"
+    },
+    {
+      "repository": "datawhalechina/happy-llm",
+      "path": "README.md",
+      "url": "https://github.com/datawhalechina/happy-llm/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/datawhalechina/happy-llm/main/README.md",
+      "checked_date": "2026-10-23",
+      "characters": 7854,
+      "sha256": "6af91ba1c3cab5dce54c9bc5ccd3246b91dfe8c132873a9adc4f6e0229048c3e"
+    },
+    {
+      "repository": "microsoft/ai-agents-for-beginners",
+      "path": "README.md",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/ai-agents-for-beginners/main/README.md",
+      "checked_date": "2026-10-23",
+      "characters": 20296,
+      "sha256": "7add14e5da37ed09249eb9432130f76d4f38e70cc4f7b135b313cb18161406dc"
+    },
+    {
+      "repository": "huggingface/smolagents",
+      "path": "README.md",
+      "url": "https://github.com/huggingface/smolagents/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/huggingface/smolagents/main/README.md",
+      "checked_date": "2026-10-23",
+      "characters": 14105,
+      "sha256": "131628d2669b4ee983c715002b57ea4b375b62c8502f6354b8d9fdf3fbc39f8d"
+    },
+    {
+      "repository": "langchain-ai/langgraph",
+      "path": "README.md",
+      "url": "https://github.com/langchain-ai/langgraph/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/langchain-ai/langgraph/main/README.md",
+      "checked_date": "2026-10-23",
+      "characters": 6351,
+      "sha256": "3a13e257af1216962d53d72414a7f44ac1fc5cea34d994bdff60ea2a3b045933"
+    },
+    {
+      "repository": "modelcontextprotocol/python-sdk",
+      "path": "README.md",
+      "url": "https://github.com/modelcontextprotocol/python-sdk/blob/main/README.md",
+      "raw_url": "https://raw.githubusercontent.com/modelcontextprotocol/python-sdk/main/README.md",
+      "checked_date": "2026-10-23",
+      "characters": 4561,
+      "sha256": "51552fa66eee9852eb40f5bad68319df90800e88c399c4f404562c570216c05b"
+    },
+    {
+      "repository": "datawhalechina/hello-agents",
+      "path": "docs/chapter3/第三章 大语言模型基础.md",
+      "url": "https://github.com/datawhalechina/hello-agents/blob/main/docs/chapter3/%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80.md",
+      "raw_url": "https://raw.githubusercontent.com/datawhalechina/hello-agents/main/docs/chapter3/%E7%AC%AC%E4%B8%89%E7%AB%A0%20%E5%A4%A7%E8%AF%AD%E8%A8%80%E6%A8%A1%E5%9E%8B%E5%9F%BA%E7%A1%80.md",
+      "checked_date": "2026-10-23",
+      "characters": 43165,
+      "sha256": "31c2a799e4775db07289cdcbc302857296623a45a6fc87576375d6016f2bd6da"
+    },
+    {
+      "repository": "datawhalechina/hello-agents",
+      "path": "docs/chapter4/第四章 智能体经典范式构建.md",
+      "url": "https://github.com/datawhalechina/hello-agents/blob/main/docs/chapter4/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%99%BA%E8%83%BD%E4%BD%93%E7%BB%8F%E5%85%B8%E8%8C%83%E5%BC%8F%E6%9E%84%E5%BB%BA.md",
+      "raw_url": "https://raw.githubusercontent.com/datawhalechina/hello-agents/main/docs/chapter4/%E7%AC%AC%E5%9B%9B%E7%AB%A0%20%E6%99%BA%E8%83%BD%E4%BD%93%E7%BB%8F%E5%85%B8%E8%8C%83%E5%BC%8F%E6%9E%84%E5%BB%BA.md",
+      "checked_date": "2026-10-23",
+      "characters": 42102,
+      "sha256": "3f02e84fcf75c76caef3eaca5b91765251d1d8afbbf0f6dc750abcd25eff1ef1"
+    },
+    {
+      "repository": "datawhalechina/hello-agents",
+      "path": "docs/chapter8/第八章 记忆与检索.md",
+      "url": "https://github.com/datawhalechina/hello-agents/blob/main/docs/chapter8/%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E8%AE%B0%E5%BF%86%E4%B8%8E%E6%A3%80%E7%B4%A2.md",
+      "raw_url": "https://raw.githubusercontent.com/datawhalechina/hello-agents/main/docs/chapter8/%E7%AC%AC%E5%85%AB%E7%AB%A0%20%E8%AE%B0%E5%BF%86%E4%B8%8E%E6%A3%80%E7%B4%A2.md",
+      "checked_date": "2026-10-23",
+      "characters": 64480,
+      "sha256": "7882c2d11eb67382a29ef6fb72369d776ba56a9fd357896a836b7833472ecff8"
+    },
+    {
+      "repository": "datawhalechina/hello-agents",
+      "path": "docs/chapter9/第九章 上下文工程.md",
+      "url": "https://github.com/datawhalechina/hello-agents/blob/main/docs/chapter9/%E7%AC%AC%E4%B9%9D%E7%AB%A0%20%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B.md",
+      "raw_url": "https://raw.githubusercontent.com/datawhalechina/hello-agents/main/docs/chapter9/%E7%AC%AC%E4%B9%9D%E7%AB%A0%20%E4%B8%8A%E4%B8%8B%E6%96%87%E5%B7%A5%E7%A8%8B.md",
+      "checked_date": "2026-10-23",
+      "characters": 74238,
+      "sha256": "e19d020341763b796add06562bf17779efa68c79fb6cb30d8281061a3dab1b06"
+    },
+    {
+      "repository": "datawhalechina/hello-agents",
+      "path": "docs/chapter10/第十章 智能体通信协议.md",
+      "url": "https://github.com/datawhalechina/hello-agents/blob/main/docs/chapter10/%E7%AC%AC%E5%8D%81%E7%AB%A0%20%E6%99%BA%E8%83%BD%E4%BD%93%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE.md",
+      "raw_url": "https://raw.githubusercontent.com/datawhalechina/hello-agents/main/docs/chapter10/%E7%AC%AC%E5%8D%81%E7%AB%A0%20%E6%99%BA%E8%83%BD%E4%BD%93%E9%80%9A%E4%BF%A1%E5%8D%8F%E8%AE%AE.md",
+      "checked_date": "2026-10-23",
+      "characters": 64343,
+      "sha256": "44352af2257757cd6625d5935f6e1d11cfe9ba4dc29d3fe67244624d63f57c59"
+    },
+    {
+      "repository": "datawhalechina/hello-agents",
+      "path": "docs/chapter12/第十二章 智能体性能评估.md",
+      "url": "https://github.com/datawhalechina/hello-agents/blob/main/docs/chapter12/%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0%20%E6%99%BA%E8%83%BD%E4%BD%93%E6%80%A7%E8%83%BD%E8%AF%84%E4%BC%B0.md",
+      "raw_url": "https://raw.githubusercontent.com/datawhalechina/hello-agents/main/docs/chapter12/%E7%AC%AC%E5%8D%81%E4%BA%8C%E7%AB%A0%20%E6%99%BA%E8%83%BD%E4%BD%93%E6%80%A7%E8%83%BD%E8%AF%84%E4%BC%B0.md",
+      "checked_date": "2026-10-23",
+      "characters": 77933,
+      "sha256": "12240210c72fd72fce1a1ed09026cba76ff3b23790c9986c457217d603def6ca"
+    },
+    {
+      "repository": "microsoft/ai-agents-for-beginners",
+      "path": "04-tool-use/README.md",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners/blob/main/04-tool-use/README.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/ai-agents-for-beginners/main/04-tool-use/README.md",
+      "checked_date": "2026-10-23",
+      "characters": 21064,
+      "sha256": "82855de0e9a81e7d69b004db1fef7dccb629b63f04f6ab02b957ddfb0908aa3b"
+    },
+    {
+      "repository": "microsoft/ai-agents-for-beginners",
+      "path": "05-agentic-rag/README.md",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners/blob/main/05-agentic-rag/README.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/ai-agents-for-beginners/main/05-agentic-rag/README.md",
+      "checked_date": "2026-10-23",
+      "characters": 16242,
+      "sha256": "42148446c9658b57cf9de140a28ac3e3d204eaf92c373281361019110052b292"
+    },
+    {
+      "repository": "microsoft/ai-agents-for-beginners",
+      "path": "10-ai-agents-production/README.md",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners/blob/main/10-ai-agents-production/README.md",
+      "raw_url": "https://raw.githubusercontent.com/microsoft/ai-agents-for-beginners/main/10-ai-agents-production/README.md",
+      "checked_date": "2026-10-23",
+      "characters": 16372,
+      "sha256": "2a356cb5d5eab8163ec307a03a43de0401ad91cadf63f311334096018cf8f468"
+    },
+    {
+      "repository": "ollama/ollama",
+      "path": "docs/api.md",
+      "url": "https://github.com/ollama/ollama/blob/main/docs/api.md",
+      "raw_url": "https://raw.githubusercontent.com/ollama/ollama/main/docs/api.md",
+      "checked_date": "2026-10-23",
+      "characters": 54613,
+      "sha256": "96db03080e385dbabf5d70e75f298d41b75983bc30975cae56f7119f848dd0f5"
+    },
+    {
+      "repository": "modelcontextprotocol/python-sdk",
+      "path": "docs_src/index/tutorial001.py",
+      "url": "https://github.com/modelcontextprotocol/python-sdk/blob/main/docs_src/index/tutorial001.py",
+      "raw_url": "https://raw.githubusercontent.com/modelcontextprotocol/python-sdk/main/docs_src/index/tutorial001.py",
+      "checked_date": "2026-10-23",
+      "characters": 279,
+      "sha256": "73b0c3ee07e9b7f9053f209979aa92099e485f6cf60a0026749f3dadd0bd1bc6"
+    }
+  ]
+}
